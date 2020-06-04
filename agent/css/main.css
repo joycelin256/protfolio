@@ -726,6 +726,7 @@ button:focus {
    ========================================================================== */
 .input-set{
   font-family: 'Microsoft JhengHei';
+  
 }
 .input-set a{
   color:#666666;
@@ -1587,6 +1588,7 @@ input:focus {
   background:url(../img/bg_joinus.png)  no-repeat;
   background-position:top center;
   background-size:cover;
+  padding-bottom:80px;
 }
 #join-us .join-title{
   padding-top:60px;
@@ -1637,7 +1639,7 @@ input:focus {
 }
 
 .submit{
-  margin:40px 0 80px 0;
+  margin:40px 0 0 0;
   font-family: 'Microsoft JhengHei';
   text-align: center;
 }
