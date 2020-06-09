@@ -75,6 +75,8 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   display: block;
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 14px rgba(0,0,0,0.2);
 }
 
 .item .item-wrap:after {
@@ -94,6 +96,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 .item .item-wrap img {
   transition: .3s transform ease;
   transform: scale(1);
+  
 }
 
 .item .item-wrap > .work-info {
@@ -123,6 +126,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 .item .item-wrap:hover {
   text-decoration: none;
+  border-radius: 10px;
 }
 
 .item .item-wrap:hover img {
@@ -162,6 +166,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 }
 
 .title-font h2, .title-font p{
+  font-family: 'Microsoft JhengHei';
+}
+
+.con-title{
   font-family: 'Microsoft JhengHei';
 }
 
@@ -231,13 +239,18 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   position: -webkit-sticky;
   top: 0;
   font-family: 'Microsoft JhengHei';
+  padding-top: 10%;
   /* required */
+}
+.sticky-content h3{
+  font-family: 'Microsoft JhengHei';
 }
 
 .list-line li {
   margin-bottom: 10px;
   position: relative;
   padding-left: 30px;
+  font-family: 'Microsoft JhengHei';
 }
 
 .list-line li:before {
