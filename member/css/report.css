@@ -1,0 +1,504 @@
+@charset "utf-8";
+
+/* CSS Document */
+.wrap {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.member-center {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 1200px;
+	height: 680px;
+	transform: translate(-50%, -50%);
+}
+
+.close {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+
+.close a {
+	width: 34px;
+	height: 34px;
+	text-align: center;
+	line-height: 32px;
+}
+
+.close img {
+	vertical-align: middle;
+	padding-bottom: 3px;
+}
+
+.close a:hover {
+	background: #f2f2f2;
+	border-radius: 60px;
+}
+
+/*-----------------------------MENU--------------------------------*/
+
+.menu {
+	width: 70px;
+	height: 680px;
+	background: #000000d8;
+	border-radius: 15px 0 0 15px;
+	padding: 6px 0;
+	font-size: 12px;
+	color: #ffffff;
+	z-index: 10;
+
+
+}
+
+.menu ul li {
+	position: relative;
+	height: 60px;
+	margin: 8px 0;
+	text-align: center;
+	padding: 10px 0;
+
+}
+
+.menu ul li:hover {
+	color: #f5946c;
+	background: #ffffff;
+	border-radius: 6px;
+	box-shadow: 0px 0px 10px #48484840;
+
+}
+
+.menu ul li:hover::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -9px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid solid solid solid;
+	border-width: 8px 0px 8px 10px;
+	transform: translate(0, -50%);
+	filter: drop-shadow(3px 0 2px #48484824);
+}
+
+.menu ul li.active {
+	position: relative;
+	color: #f5946c;
+	background: #ffffff;
+	border-radius: 6px;
+	box-shadow: 0px 0px 10px #48484840;
+}
+
+.menu ul li.active::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -9px;
+	border-color: transparent transparent transparent #ffffff;
+	border-style: solid solid solid solid;
+	border-width: 8px 0px 8px 10px;
+	transform: translate(0, -50%);
+	filter: drop-shadow(3px 0 2px #48484824);
+}
+
+.menu ul li p {
+	margin-top: 5px;
+}
+
+.menu ul li.active>p {
+
+	color: #f5946c;
+}
+
+
+.personal::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/ic_menu_personal_normal.svg) no-repeat;
+	margin: 0 auto;
+}
+
+.personal:hover::before,
+.personal.active::before {
+	background: url(../images/ic_menu_personal_active.svg) no-repeat;
+}
+
+.wallet::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/ic_menu_wallet_normal.svg) no-repeat;
+	margin: 0 auto;
+}
+
+.wallet:hover::before,
+.wallet.active::before {
+	background: url(../images/ic_menu_wallet_active.svg) no-repeat;
+}
+
+.deposit::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/ic_menu_deposit_normal.svg) no-repeat;
+	margin: 0 auto;
+}
+
+.deposit:hover::before,
+.deposit.active::before {
+	background: url(../images/ic_menu_deposit_active.svg) no-repeat;
+}
+
+.withdraw::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/ic_menu_withdraw_normal.svg) no-repeat;
+	margin: 0 auto;
+}
+
+.withdraw:hover::before,
+.withdraw.active::before {
+	background: url(../images/ic_menu_withdraw_active.svg) no-repeat;
+}
+
+.bet::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/ic_menu_betrecord_normal.svg) no-repeat;
+	margin: 0 auto;
+}
+
+.bet:hover::before,
+.bet.active::before {
+	background: url(../images/ic_menu_betrecord_active.svg) no-repeat;
+}
+
+.account::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/ic_menu_accountrecord_normal.svg) no-repeat;
+	margin: 0 auto;
+}
+
+.account:hover::before,
+.account.active::before {
+	background: url(../images/ic_menu_accountrecord_active.svg) no-repeat;
+}
+
+.profit::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/ic_menu_profit_normal.svg) no-repeat;
+	margin: 0 auto;
+}
+
+.profit:hover::before,
+.profit.active::before {
+	background: url(../images/ic_menu_profit_active.svg) no-repeat;
+}
+
+.message::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/ic_menu_message_normal.svg) no-repeat;
+	margin: 0 auto;
+}
+
+.message:hover::before,
+.message.active::before {
+	background: url(../images/ic_menu_message_active.svg) no-repeat;
+}
+
+.friend::before {
+	content: "";
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/ic_menu_friend_normal.svg) no-repeat;
+	margin: 0 auto;
+}
+
+.friend:hover::before,
+.friend.active::before {
+	background: url(../images/ic_menu_friend_active.svg) no-repeat;
+}
+
+
+
+/*-----------------------------CONTENT-TAB--------------------------------*/
+
+.content {
+
+	background: #ffffff;
+	border-radius: 0 15px 15px 0;
+	width: 1130px;
+	height: 680px;
+}
+
+.tab {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #f5f5f5;
+	padding: 0 50px 0 40px;
+}
+
+.paging ul li {
+	position: relative;
+	float: left;
+	width: 100px;
+	font-size: 16px;
+	color: #626262;
+	/* padding: 0 6px; */
+	/* margin: 0 10px; */
+	text-align: center;
+	line-height: 50px;
+}
+
+/* .paging ul li:hover,
+.paging ul li.active {
+	color: #f5946c;
+} */
+
+.paging ul li:hover::after,
+.paging ul li.active::after {
+	content: "";
+	display: block;
+	width: 90px;
+	height: 3px;
+	/* background: linear-gradient(to right, #fbc378 0%, #f48969 80%); */
+	position: absolute;
+	bottom: 1px;
+	border-radius: 3px 3px 0 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.paging ul li.allgame:hover,
+.paging ul li.allgame.active {
+	color: #888e9d;
+}
+
+.paging ul li.allgame:hover::after,
+.paging ul li.allgame.active::after {
+	background: linear-gradient(to right, #969ca9 0%, #777e90 80%);
+}
+
+.paging ul li.sport:hover,
+.paging ul li.sport.active {
+	color: #52c94b;
+}
+
+.paging ul li.sport:hover::after,
+.paging ul li.sport.active::after {
+	background: linear-gradient(to right, #9eeb9a 0%, #52c94b 80%);
+}
+
+.paging ul li.livecasino:hover,
+.paging ul li.livecasino.active {
+	color: #ff6c8f;
+}
+
+.paging ul li.livecasino:hover::after,
+.paging ul li.livecasino.active::after {
+	background: linear-gradient(to right, #fb8db2 0%, #ff6c8f 80%);
+}
+
+.paging ul li.slot:hover,
+.paging ul li.slot.active {
+	color: #6eb3ff;
+}
+
+.paging ul li.slot:hover::after,
+.paging ul li.slot.active::after {
+	background: linear-gradient(to right, #60d7ff 0%, #6eb3ff 80%);
+}
+
+.paging ul li.cardgame:hover,
+.paging ul li.cardgame.active {
+	color: #ca83f3;
+}
+
+.paging ul li.cardgame:hover::after,
+.paging ul li.cardgame.active::after {
+	background: linear-gradient(to right, #e590f5 0%, #ca83f3 80%);
+}
+
+.paging ul li.lottery:hover,
+.paging ul li.lottery.active {
+	color: #f5946c;
+}
+
+.paging ul li.lottery:hover::after,
+.paging ul li.lottery.active::after {
+	background: linear-gradient(to right, #fbc378 0%, #f5946c 80%);
+}
+
+.clear-both {
+	clear: both;
+}
+
+.amount {
+	display: flex;
+	align-items: center;
+}
+
+.main-account {
+	float: left;
+	font-size: 15px;
+	line-height: 50px;
+	color: #737476;
+}
+
+.main-account span {
+	font-size: 17px;
+	color: #52c94b;
+	margin: 0 26px 0 14px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+/*----------------------------report--------------------------------*/
+.report-box {
+	margin: 28px 0;
+	width: 1130px;
+	padding: 0 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+
+}
+
+.dayselect {
+	height: 38px;
+	width: 240px;
+	float: left;
+}
+
+.report-set {
+	margin-right: 34px;
+	height: 38px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.report-set p {
+	color: #a2aaad;
+	display: inline-block;
+	font-size: 13px;
+	line-height: 16px;
+	text-align: right;
+	margin: 0 10px;
+}
+
+.refresh {
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	text-align: center;
+}
+
+.refresh img {
+	vertical-align: bottom;
+	transform: rotate(-45deg);
+	-webkit-transition: -webkit-transform 0.3s ease-in-out;
+	transition: -webkit-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.refresh:hover img {
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.15));
+	filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.15))
+}
+
+/* switch */
+.switch {
+	float: right;
+	margin-left: 15px;
+}
+
+.switch input {
+	display: none
+}
+
+.switch label {
+	position: relative;
+	width: 42px;
+	background: #CCC;
+	height: 16px;
+	border-radius: 14px;
+	float: right;
+	padding: 1px 0 1px 1px;
+	-webkit-box-shadow: inset 0 2px 5px rgba(4, 0, 0, .15);
+	box-shadow: inset 0 2px 5px rgba(4, 0, 0, .15);
+}
+
+.switch label::before {
+	position: absolute;
+	top: 50%;
+	right: 3px;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+	content: "0.00";
+	font-size: 10px;
+	color: #fff;
+	-webkit-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+}
+
+.switch label em {
+	width: 14px;
+	height: 14px;
+	float: left;
+	border-radius: 13px;
+	-webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+	background: -webkit-gradient(linear, left top, right top, color-stop(12%, rgb(255, 255, 255)), color-stop(57%, rgb(237, 237, 237)));
+	background: linear-gradient(90deg, rgb(255, 255, 255)12%, rgb(237, 237, 237)57%);
+	-webkit-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+.switch input:checked+label {
+	background: -webkit-gradient(linear, left top, right top, from(#fbc378), to(#f5946c));
+	background: linear-gradient(to right, #fbc378, #f5946c);
+
+}
+
+.switch input:checked+label::before {
+	left: 3px;
+}
+
+.switch input:checked+label em {
+	-webkit-transform: translateX(27px);
+	transform: translateX(27px);
+}
