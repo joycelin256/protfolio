@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>充值-銀行轉帳</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500|Roboto:400,500,700&display=swap&subset=chinese-traditional"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/deposit.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/deposit.js"></script>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="member-center">
+            <div class="close">
+                <a href="#"><img src="images/ic_close_normal.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <a href="index.html">
+                        <li class="personal">
+                            <p>個人中心</p>
+                        </li>
+                    </a>
+                    <a href="wallet.html">
+                        <li class="wallet">
+                            <p>我的錢包</p>
+                        </li>
+                    </a>
+                    <a href="deposit_atm.html">
+                        <li class="deposit active">
+                            <p>存款</p>
+                        </li>
+                    </a>
+                    <a href="withdraw.html">
+                        <li class="withdraw">
+                            <p>提款</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="bet">
+                            <p>投注紀錄</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="account">
+                            <p>帳戶紀錄</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="profit">
+                            <p>個人盈虧</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="message">
+                            <p>消息中心</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="friend">
+                            <p>我的好友</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+
+            <div class="content">
+                <div class="tab">
+                    <div class="paging clear-both">
+                        <ul>
+                            <a href="deposit_atm.html">
+                                <li class="active">充值</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="amount">
+                        <div class="main-account">主帳號<span>200,800.00</span></div>
+                    </div>
+                </div>
+
+                <div class="depo-content">
+                    <div class="sub-tab1">
+                        <div class="green-title">充值方式</div>
+                        <div class="recharge-frame">
+                            <div class="recharge-item">
+                                <div class="ic-check active">
+                                    <a href="deposit_bank.html">
+                                        <div class="tt-bank">銀行轉帳</div>
+                                    </a></div>
+                                <div class="ic-check "><a href="deposit_atm.html">
+                                        <div class="tt-atm">ATM轉帳</div>
+                                    </a></div>
+                                <div class="ic-check "><a href="deposit_shop.html">
+                                        <div class="tt-shop">超商代碼</div>
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apply">
+                        <div class="green-title">提交申請</div>
+
+                        <div class="apply-frame">
+                            <div class="select-bank">
+                                <h6>請先存款到下列帳號<span>此轉帳資訊1小時內有效</span></h6>
+                                <div class="bank">
+                                    <select name="" id="">
+                                        <option value="">Karsikorn Bank</option>
+                                        <option value="">Karsikorn Bank</option>
+                                        <option value="">Karsikorn Bank</option>
+                                    </select>
+                                    <div class="copy-bank">
+                                        <p>sangduean nanmueng</p>
+                                        <a href="#" class="ic-copy"></a>
+                                    </div>
+                                    <div class="copy-bank">
+                                        <p>12-364597-961236</p>
+                                        <a href="#" class="ic-copy"></a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="input-item">
+                                <label>選擇銀行卡</label>
+                                <select name="" id="bank-item">
+                                    <option value="01" selected>黃小明 (108)中國信託1242155415</option>
+                                    <option value="02">黃小明 (108)花旗銀行1242155415</option>
+                                    <option value="03">黃小明 (108)台新銀行1242155415</option>
+                                </select>
+
+                                <label>存款金額</label>
+                                <select name="" id="deposit-num">
+                                    <option value="" disabled selected hidden>請輸入存款金額(501~30,000)</option>
+                                    <option value="500">500</option>
+                                    <option value="1,000">1,000</option>
+                                    <option value="3,000">3,000</option>
+                                    <option value="5,000">5,000</option>
+                                    <option value="30,000">30,000</option>
+                                </select>
+
+                                <div class="btn-submit">
+                                    <a href="#" class="submit">確認送出</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="sub-content">
+                            <h1>注意事項</h1>
+                            <ol class="notice">
+                                <li><p><span>請務必依照指定的銀行帳號進行存款</span>，若轉至舊有
+                                    的銀行帳號將無法查收，恕不負責。</p></li>
+                                <li><p>僅接受註冊戶名轉入之款項，否則將無法轉換點數。</p></li>
+                                <li><p>完成轉帳手續後再填寫上方欄位資料送出申請。</p></li>
+                            </ol>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

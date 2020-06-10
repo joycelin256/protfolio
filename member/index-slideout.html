@@ -1,0 +1,592 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>個人中心</title>
+	<link
+		href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500|Roboto:400,500,700&display=swap&subset=chinese-traditional"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/personal-slideout.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/all.js"></script>
+
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="member-center">
+
+			<div class="close">
+				<a href="#"><img src="images/ic_close_normal.png" alt=""></a>
+			</div>
+
+			<div class="menu">
+				<ul>
+					<a href="index.html">
+						<li class="personal active">
+							<p>個人中心</p>
+						</li>
+					</a>
+					<a href="wallet.html">
+						<li class="wallet">
+							<p>我的錢包</p>
+						</li>
+					</a>
+					<a href="deposit_atm.html">
+						<li class="deposit">
+							<p>存款</p>
+						</li>
+					</a>
+					<a href="withdraw.html">
+						<li class="withdraw">
+							<p>提款</p>
+						</li>
+					</a>
+					<a href="#">
+						<li class="bet">
+							<p>投注紀錄</p>
+						</li>
+					</a>
+					<a href="#">
+						<li class="account">
+							<p>帳戶紀錄</p>
+						</li>
+					</a>
+					<a href="#">
+						<li class="profit">
+							<p>個人盈虧</p>
+						</li>
+					</a>
+					<a href="#">
+						<li class="message">
+							<p>消息中心</p>
+						</li>
+					</a>
+					<a href="#">
+						<li class="friend">
+							<p>我的好友</p>
+						</li>
+					</a>
+				</ul>
+			</div>
+			<div class="content">
+
+				<div class="per-content">
+
+					<div class="per-information">
+						<div class="per-id">
+							<h6>您好，dwkurich8</h6>
+							<p>本月第七次登錄</p>
+						</div>
+
+						<div class="per-level">
+							<!-- <div class="level-one">
+								<img src="images/vip/ic_vip_lv1.png" alt="">
+								<div class="level-one-name">菁英</div>
+							</div> -->
+							<!-- <div class="level-two">
+								<img src="images/vip/ic_vip_lv2.png" alt="">
+								<div class="level-two-name">至尊</div>
+							</div> -->
+							<div class="level-three">
+								<img src="images/vip/ic_vip_lv3.png" alt="">
+								<div class="level-three-name">尊爵</div>
+							</div>
+							<!-- <div class="level-four">
+								<img src="images/vip/ic_vip_lv4.png" alt="">
+								<div class="level-four-name">帝王</div>
+							</div> -->
+
+							<div class="progressbar">
+								<div class="bar"></div>
+								<p>距離升級還差<span>145,201</span></p>
+							</div>
+						</div>
+
+						<div class="per-deposit">
+							<div class="per-main">
+								<div class="main-title">
+									<p>主帳號</p>
+									<a href="#" class="deposit-btn">充值</a>
+								</div>
+								<p>200,000<span>.00</span></p>
+							</div>
+							<div class="per-line"></div>
+							<div class="per-main">
+								<div class="main-title">
+									<p>可提領金額</p>
+									<a href="#" class="withdraw-btn">提現</a>
+								</div>
+								<p>1,800<span>.00</span></p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="second">
+
+						<div class="week-bet">
+							<div class="bg_week">
+								<div class="exceed">
+									<h2>60<span>%</span></h2>
+									<p>已經超過60%的會員</p>
+								</div>
+								<div class="week-amount">
+									<p>20,000<span>.00</span></p>
+									<h6>本週投注額</h6>
+								</div>
+							</div>
+						</div>
+
+						<div class="per-total">
+							<div class="per-friend">
+								<div class="week-amount">
+									<img src="images/ic_personal_friend.png" alt="">
+									<p>26</p>
+									<h6>好友總數</h6>
+								</div>
+							</div>
+							<div class="per-bonus">
+								<div class="week-amount">
+									<img src="images/ic_personal_bonus.png" alt="">
+									<p>1,200<span>.43</span></p>
+									<h6>推薦獎金</h6>
+								</div>
+							</div>
+						</div>
+
+						<div class="link">
+							<div class="recom-code">
+								<p>推薦代碼</p>
+								<div class="code" data-showtip="複製代碼">Xt6554 <img src="images/ic_personal_copy.png"
+										alt=""></div>
+							</div>
+
+							<div class="recom-conn">
+								<p>我的推薦鏈接</p>
+								<div class="connect" data-showtip="複製鏈接">http://media.lhbet88.com/168MM <img
+										src="images/ic_personal_copy.png" alt=""></div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="setting">
+
+						<div class="setblock" id="btn-personal">
+							<div class="btn-personal"><img src="images/btn_personal_information_normal.png" alt="">
+							</div>
+							<div class="settext">
+								<h6 class="complete">個人資料</h6>
+								<p>填寫個人資料以提高安全等級，完善個人資料。</p>
+							</div>
+						</div>
+
+						<div class="setblock">
+							<div class="btn-login"><img src="images/btn_personal_login_normal.png" alt=""></div>
+							<div class="settext">
+								<h6 class="complete">登錄密碼</h6>
+								<p>變更您的帳戶密碼。</p>
+							</div>
+						</div>
+
+						<div class="setblock">
+							<div class="btn-funds"><img src="images/btn_personal_funds_normal.png" alt=""></div>
+							<div class="settext">
+								<h6 class="complete">資金密碼</h6>
+								<p>資金密碼主要用於提款時需要校驗的密碼。</p>
+							</div>
+						</div>
+
+						<div class="setblock">
+							<div class="btn-bank"><img src="images/btn_personal_bank_normal.png" alt=""></div>
+							<div class="settext">
+								<h6 class="undone">綁定銀行卡</h6>
+								<p>設定與遊戲帳號所有人相同姓名的銀行帳戶，以便快速取款。</p>
+							</div>
+						</div>
+
+						<div class="setblock">
+							<div class="btn-app"><img src="images/btn_personal_app_normal.png" alt=""></div>
+							<div class="settext">
+								<h6 class="undone">帳號信息</h6>
+								<p>設定遊戲APP帳號密碼，方便您在不同裝置快速登錄。</p>
+							</div>
+						</div>
+
+						<div class="setblock">
+							<div class="btn-signout"><img src="images/btn_personal_signout_normal.png" alt=""></div>
+							<div class="settext">
+								<h6>退出帳號</h6>
+								<p>安全登出系統。</p>
+							</div>
+						</div>
+
+						<div class="last-login">
+							<p>上次登錄IP：61.224.179.204</p>
+							<p>上次登錄：中國香港 2019-07-08 14:19:05</p>
+						</div>
+
+					</div>
+
+				</div>
+
+
+
+				<!--slide content-->
+
+
+				<div class="slide">
+					<div class="slidemask"></div>
+					<div class="slide-content">
+						<ul class="slide-btntab">
+							<li class="s-information"><a href="#tab01"><img
+										src="images/btn_personal_information_normal.png" alt=""></a></li>
+							<li class="s-login "><a href="#tab02"><img src="images/btn_personal_login_normal.png"
+										alt=""></a></li>
+							<li class="s-funds"><a href="#tab03"><img src="images/btn_personal_funds_normal.png"
+										alt=""></a></li>
+							<li class="s-bank"><a href="#tab04"><img src="images/btn_personal_bank_normal.png"
+										alt=""></a></li>
+							<li class="s-app"><a href="#tab05"><img src="images/btn_personal_app_normal.png" alt=""></a>
+							</li>
+						</ul>
+
+
+						<!--modify-personal-information-->
+						<div id="tab01" class="slide-inner">
+
+							<div class="inner-padding">
+								<div class="close-slide">
+									<a href="#"><img src="images/ic_close_normal.png" alt=""></a>
+								</div>
+
+								<div class="orange-title">個人帳號設定</div>
+
+								<div class="input-content">
+									<label for="name" class="wrong-label">真實姓名</label>
+									<input id="name" type="text" value="王小明" disabled="disabled" />
+									<label for="phone">手機</label>
+									<input id="phone" type="text" value="台灣+886 0920782520" disabled="disabled" />
+									<label for="line">LINE ID</label>
+									<input id="line" type="text" placeholder="" />
+									<label for="wechat">微信 ID</label>
+									<input id="wechat" type="text" placeholder="" />
+								</div>
+
+								<a href="#" class="btn-complete">確認</a>
+							</div>
+						</div>
+
+
+
+						<!--modify-login-password-->
+						<div id="tab02" class="slide-inner">
+
+							<div class="inner-padding">
+
+								<div class="modify">
+									<div class="close-slide">
+										<a href="#"><img src="images/ic_close_normal.png" alt=""></a>
+									</div>
+
+									<div class="purple-title">登錄密碼設定</div>
+
+									<div class="input-content">
+										<label for="original" class="wrong-label">原登錄密碼<a class="forget"
+												href="#">忘記密碼？</a></label>
+										<input class="wrong" id="original" type="text" placeholder="請輸入原資金密碼"
+											value="linglee12351" />
+										<div class="wrong-message">請輸入正確的資金密碼</div>
+										<label for="new">新登錄密碼</label>
+										<input id="new" type="text" placeholder="請輸入6-20(字母/數字)的資金密碼" />
+										<label for="again">確認登錄密碼</label>
+										<input id="again" type="text" placeholder="請再次輸入資金密碼" />
+									</div>
+									<a href="#" class="btn-complete">確認</a>
+								</div>
+
+								<div class="forgetpage">
+									<div class="return">
+										<a href="#"><img src="images/btn_forget_return_normal.png" alt=""></a>
+									</div>
+
+									<div class="purple-title">忘記密碼</div>
+
+									<div class="input-content">
+										<div class="phone">
+											<label for="">綁定的手機號</label>
+											<input id="" type="text" class="binding-phone" placeholder="請輸入手機號" />
+											<div class="country">台灣+886</div>
+											<a href="#" class="send">獲取驗證碼</a>
+											<div class="reciprocal">59 s</div>
+										</div>
+										<label for="">驗證碼</label>
+										<input id="" type="text" placeholder="請輸入驗證碼" />
+										<div class="reset-password">
+											<label for="">新登錄密碼</label>
+											<input id="" type="text" placeholder="請輸入新的資金密碼" />
+											<label for="">確認登錄密碼</label>
+											<input id="" type="text" placeholder="請再次輸入資金密碼" />
+										</div>
+									</div>
+									<a href="#" class="btn-undone">儲存</a>
+								</div>
+							</div>
+
+						</div>
+
+						<!--modify-fund-password-->
+						<div id="tab03" class="slide-inner">
+
+							<div class="inner-padding">
+
+								<div class="modify">
+									<div class="close-slide">
+										<a href="#"><img src="images/ic_close_normal.png" alt=""></a>
+									</div>
+
+									<div class="green-title">資金密碼設定</div>
+
+									<div class="input-content">
+										<label for="original" class="wrong-label">原資金密碼<a class="forget"
+												href="#">忘記密碼？</a></label>
+										<input class="wrong" id="original" type="text" placeholder="請輸入原資金密碼"
+											value="linglee12351" />
+										<div class="wrong-message">請輸入正確的資金密碼</div>
+										<label for="new">新資金密碼</label>
+										<input id="new" type="text" placeholder="請輸入6-20(字母/數字)的資金密碼" />
+										<label for="again">確認資金密碼</label>
+										<input id="again" type="text" placeholder="請再次輸入資金密碼" />
+									</div>
+									<a href="#" class="btn-complete">確認</a>
+								</div>
+
+								<div class="forgetpage">
+									<div class="return">
+										<a href="#"><img src="images/btn_forget_return_normal.png" alt=""></a>
+									</div>
+
+									<div class="green-title">忘記密碼</div>
+
+									<div class="input-content">
+										<div class="phone">
+											<label for="">綁定的手機號</label>
+											<input id="" type="text" class="binding-phone" placeholder="請輸入手機號" />
+											<div class="country">台灣+886</div>
+											<a href="#" class="send">獲取驗證碼</a>
+											<div class="reciprocal">59 s</div>
+										</div>
+										<label for="">驗證碼</label>
+										<input id="" type="text" placeholder="請輸入驗證碼" />
+										<div class="reset-password">
+											<label for="">新資金密碼</label>
+											<input id="" type="text" placeholder="請輸入新的資金密碼" />
+											<label for="">確認資金密碼</label>
+											<input id="" type="text" placeholder="請再次輸入資金密碼" />
+										</div>
+									</div>
+									<a href="#" class="btn-undone">儲存</a>
+								</div>
+							</div>
+
+						</div>
+
+
+						<!--modify-bankcard-->
+						<div id="tab04" class="slide-inner">
+
+							<div class="inner-bank">
+								<div class="close-slide">
+									<a href="#"><img src="images/ic_close_normal.png" alt=""></a>
+								</div>
+								<div class="addbank">
+									<div class="red-title">已綁定銀行卡</div>
+									<div class="have-bankcard">
+
+										<div class="card orange">
+											<div class="bank-name">工商銀行</div>
+											<div class="bank-number">**** **** **** 0554</div>
+											<div class="bank-infor">
+												<div class="branch">
+													<p>分行名稱<span>北京分行</span></p>
+												</div>
+												<div class="date">
+													<p>綁卡日期<span>19-07-08</span></p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card pink">
+											<div class="bank-name">工商銀行</div>
+											<div class="bank-number">**** **** **** 0554</div>
+											<div class="bank-infor">
+												<div class="branch">
+													<p>分行名稱<span>北京分行</span></p>
+												</div>
+												<div class="date">
+													<p>綁卡日期<span>19-07-08</span></p>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="card green">
+											<div class="bank-name">工商銀行</div>
+											<div class="bank-number">**** **** **** 0554</div>
+											<div class="bank-infor">
+												<div class="branch">
+													<p>分行名稱<span>北京分行</span></p>
+												</div>
+												<div class="date">
+													<p>綁卡日期<span>19-07-08</span></p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card gray">
+											<p>新增銀行卡</p>
+											<a href="#" class="btn-addbank"></a>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="setting-bank">
+									<div class="red-title">新增銀行卡</div>
+
+									<div class="input-content">
+										<label for="real-name">真實姓名</label>
+										<input id="real-name" type="text" placeholder="須與您的銀行戶名相同，否則不能提款" />
+										<label for="bank">銀行代號</label>
+										<select name="" id="bank">
+											<option value="" disabled selected hidden>請選擇銀行代號</option>
+											<option value="007">第一銀行 007</option>
+											<option value="012">華南銀行 007</option>
+											<option value="032">台新銀行 007</option>
+										</select>
+										<label for="branch">分行名稱</label>
+										<input id="branch" type="text" placeholder="請輸入分行名稱" />
+										<label for="bank-num">匯款帳號</label>
+										<input id="bank-num" type="text" placeholder="請輸入匯款帳號" />
+									</div>
+
+									<div class="withdraw-input">
+										<label for="withdraw-pw">提款密碼</label>
+										<div class="use-pw">
+											<p>使用提款密碼：</p>
+											<div class="check">
+												<label for="yes">是</label>
+												<input type="radio" id="yes" class="use-pwyes" name="use-pw" checked>
+											</div>
+											<div class="check">
+												<label for="no">否</label>
+												<input type="radio" id="no" class="use-pwyes" name="use-pw">
+												<span>不需提款密碼即可提款</span>
+											</div>
+										</div>
+										<div class="use-withdraw-input">
+											<input id="withdraw-pw" type="text" placeholder="請輸入6~10個英數字密碼" />
+											<div class="eyes"></div>
+										</div>
+									</div>
+
+									<a href="#" class="btn-submit">確認送出</a>
+
+
+								</div>
+
+							</div>
+						</div>
+
+
+						<!--modify-app-password-->
+						<div id="tab05" class="slide-inner">
+
+							<div class="inner-bank">
+								<div class="close-slide">
+									<a href="#"><img src="images/ic_close_normal.png" alt=""></a>
+								</div>
+								<div class="modify-account">
+									<div class="margin-account">
+										<div class="blue-title">帳號信息</div>
+									</div>
+									<div class="account-box">
+										<ul>
+											<li>
+												<h6>歐博娛樂帳號</h6>
+												<div class="account-id">
+													<P>APP帳號</P>
+													<span>lhbetab12328lhb</span>
+												</div>
+												<div class="account-pw">
+													<p>密碼設定</p>
+													<span>尚未設定</span>
+												</div>
+											</li>
+											<li>
+												<h6>DC娛樂帳號</h6>
+												<div class="account-id">
+													<P>APP帳號</P>
+													<span>lhbetab12328lhb</span>
+												</div>
+												<div class="account-pw">
+													<p>密碼設定</p>
+													<span>abcde12345</span>
+													<a href="#" class="text-copy">複製</a>
+												</div>
+
+											</li>
+											<li>
+												<h6>歐博娛樂帳號</h6>
+												<div class="account-id">
+													<P>APP帳號</P>
+													<span>lhbetab12328lhb</span>
+												</div>
+												<div class="account-pw">
+													<p>密碼設定</p>
+													<span>尚未設定</span>
+												</div>
+											</li>
+
+										</ul>
+
+									</div>
+								</div>
+
+								<div class="setting-apppassword">
+									<div class="blue-title">DC娛樂帳號</div>
+									<div class="input-content">
+										<label for="password" class="wrong-label">原密碼</label>
+										<input id="password" type="text" placeholder="請填寫原登入密碼" />
+										<label for="new_password">新密碼</label>
+										<input id="new_password" type="text" placeholder="請输入6-20（字母/數字）的密碼" />
+										<label for="new_password">確認密碼</label>
+										<input id="new_password" type="text" placeholder="請再次填寫密碼" />
+									</div>
+
+									<a href="#" class="btn-complete">確認</a>
+								</div>
+
+
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+
+
+				<!--silde content end-->
+
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
