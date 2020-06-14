@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="cn">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IME APP</title>
     <link rel="stylesheet" href="css/reset.css">
 </head>
-<body style="width: 100%;display: block;background:url(./images/ime-bg.jpg);background-size:cover;">
-    <iframe src="anchor.html" width="414" height="736" frameborder="0" scrolling="no" style="margin: 2% auto; display: block;box-shadow:0 0 40px rgba(0,0,0,0.4);border-radius:20px;"></iframe>
+
+<style>
+
+    .frame{
+        width: 100%;
+        height: 100%;
+        background:url(./images/ime-bg.jpg) no-repeat;
+        background-size:cover;
+        background-position:center;
+        position:fixed;
+    }
+
+    .content{
+        width: 375px;
+        height: 667px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        box-shadow:0 0 40px rgba(0,0,0,0.4);
+        border-radius:20px;
+    }
+
+
+</style>
+
+<body>
+    <div class="frame">
+        <iframe src="anchor.html" width="414" height="736" frameborder="0" scrolling="no" class="content"></iframe>
+    </div>
+
 </body>
+
 </html>
