@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>提現</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500|Roboto:400,500,700&amp;display=swap&amp;subset=chinese-traditional"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/withdraw.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/js/swiper.js"> </script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+
+</head>
+
+<body class="bg">
+
+    <div class="account">
+        <div class="acc-header">
+            <div class="arrow"><a href="member.html"></a></div>
+            <div class="headline-text"><span>提款</span></div>
+            <div class="headline-rbtn"><a href="#">紀錄</a></div>
+        </div>
+
+
+        <div class="card-slide">
+
+            <div class="swiper-container" id="swiper-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+
+                        <div class="card orange">
+                            <div class="card-title">可提領金額<a href="#" class="reload"></a></div>
+                            <div class="money">
+                                <span>2,651.18</span>
+                                <a href="#" class="recycling">一鍵回收</a>
+                            </div>
+                            <div class="bank-infor">
+                                <p>812 台新銀行</p>
+                                <p>**************0405</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card green">
+                            <div class="card-title">可提領金額<a href="#" class="reload"></a></div>
+                            <div class="money">
+                                <span>2,651.18</span>
+                                <a href="#" class="recycling btn-green">一鍵回收</a>
+                            </div>
+                            <div class="bank-infor">
+                                <p>812 第一銀行</p>
+                                <p>**************0405</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide">
+
+                        <div class="card pink">
+                            <div class="card-title">可提領金額<a href="#" class="reload"></a></div>
+                            <div class="money">
+                                <span>2,651.18</span>
+                                <a href="#" class="recycling btn-pink">一鍵回收</a>
+                            </div>
+                            <div class="bank-infor">
+                                <p>812 第一銀行</p>
+                                <p>**************0405</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="depo-content">
+
+            <div class="depo-title">提款資料</div>
+
+            <div class="submit-input">
+
+                <div class="amount-input">
+                    <input type="text" id="withdraw-amount" value="" placeholder="提款金額(500以上)" required><a href="#"
+                        class="btn-cancel"></a>
+                </div>
+                <div class="amount-input">
+                    <input type="password" id="bankpassword" value="" placeholder="輸入提款密碼" required>
+                    <div class="eyes"></div>
+                </div>
+                <div class="forget">
+                    <a href="#">忘記提款密碼?</a>
+                </div>
+            </div>
+
+
+
+            <a class="send-out" id="bank-send">確認送出</a>
+
+            <div class="notice">
+                <h5>注意事項</h5>
+                <ol>
+                    <li><span> 繳費完成後請妥善保管交易收據，以便查證。</span></li>
+                    <li>繳費完畢，<span>系統約於5~15分內自動入點</span>，若繳費完60分鐘後未入帳，請洽詢<a href="#">客服人員。</a></li>
+                    <li>第三方儲值繳費代碼僅供一次性使用，請勿重覆繳款，若重覆繳款將無法入帳。</li>
+                </ol>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="mask">
+        <div class="popwindow">
+            <img src="images/img_withdraw_apply.png" alt="">
+            <a href="#" class="pop-close"></a>
+            <!-- <h1>完成新增銀行卡</h1> -->
+            <p>每位會員<span>同時只能送出一筆提款申請</span>，待審核完成後，才能送出其他筆申請，確定送出提款申請？</p>
+            <div class="confirm">
+                <a href="#" class="no">否</a>
+                <a href="#" class="yes">是</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mask-2">
+        <div class="popwindow">
+            <img src="images/img_submit_success.png" alt="">
+            <a href="#" class="pop-close"></a>
+            <h1>提款提交</h1>
+            <div class="submit-amount">提款金額500</div>
+            <p>請確認您的申請金額無誤，並等待系統自動審核通過後，若未收到款項，請洽
+                客服人員。</p>
+
+            <a class="pop-confirm" >確認</a>
+
+        </div>
+    </div>
+
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            slidesPerView: 1.1,
+            centeredSlides: true,
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+
+
+        })        
+    </script>
+
+</body>
+
+</html>
