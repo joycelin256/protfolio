@@ -1,0 +1,918 @@
+body::-webkit-scrollbar{
+    display:none;
+}
+
+.scrollcontainer::-webkit-scrollbar{
+    display:none;
+}
+
+.lobbyall {
+    font-size: 24px;
+    font-family: 'Microsoft YaHei';
+}
+
+
+
+/* ------------------------------背景換圖-------------------------- */
+
+.lobbybg {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 57.65%;
+    z-index: -9999;
+
+    background: url(../images/bg_lobby_top_green.png) no-repeat;
+    background-size: cover;
+}
+
+.lbheadline {
+    z-index: 99999;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-size: 100%;
+    padding: 1% 5%;
+    margin: 0 auto;
+
+    min-height: 52px;
+    background: url(../images/bg_lobby_headline_green.png);
+    background-size:cover;
+}
+
+/* ------------------------------背景換圖 end-------------------------- */
+
+.topL {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+
+.lobbytt1 {
+    position: relative;
+    left: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 40px;
+}
+
+.topL img{
+    width: 100%;
+}
+
+.topR {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 60%;
+}
+
+.lobbybtn {
+    margin-left: 8px;
+    width: 82px;
+    height: 38px;
+    line-height: 38px;
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* -----------------------登入、註冊按鈕樣式是修改------------------------ */
+
+.signupBtn {
+    color: #ffffff;
+    background:linear-gradient(to right, #ff6d31,#ff3b57);
+    border-radius: 60px;
+    box-shadow:0 0 10px rgba(11, 97, 55, 0.4);
+    text-shadow:0 0 6px rgba(81, 6, 9, 0.2);
+    
+}
+
+.loginBtn {
+    color: #ffffff;
+    background:linear-gradient(to right, #48e780,#05dbe8);
+    border-radius: 60px;
+    box-shadow:0 0 10px rgba(11, 97, 55, 0.06);
+    text-shadow:0 0 6px rgba(11, 97, 55, 0.4);
+   
+}
+
+.country{
+    width: 26px;
+    height: 26px;
+    background:url(../images/ic_lobby_china.png) no-repeat;
+    background-size:100%;
+    margin-left:8px;
+    margin-top:2px;
+}
+
+/* -----------------------登入、註冊按鈕樣式是修改 end------------------------ */
+
+
+.livegame {
+    position: relative;
+}
+
+.lottogame {
+    position: relative;
+}
+
+
+.sportgame {
+    position: relative;
+    padding-bottom: 140px;
+}
+
+
+
+/* ------------------------標題前面的icon拿掉--------------------------- */
+.gamett1 {
+    position: relative;
+    top: 2.5em;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 0.9em;
+    font-weight: 500;
+
+    padding: 0 5%;
+}
+/* .gamett1::before {
+    content: '';
+    background-image: url(../images/ic_lobby_gameh2.png);
+    background-size: 12px 16px;
+    position: absolute;
+    width: 12px;
+    height: 16px;
+    top: 13px;
+    left: 5%;
+} */
+.gamett {
+    position: relative;
+    top: 2.5em;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-size: 0.9em;
+    font-weight: 500;
+
+    padding: 0 5%;
+}
+
+/* .gamett::before {
+    content: '';
+    background-image: url(../images/ic_lobby_gameh2.png);
+    background-size: 12px 16px;
+    position: absolute;
+    width: 12px;
+    height: 16px;
+    top: 13px;
+    left: 5%;
+} */
+
+/* ------------------------標題前面的icon拿掉  end--------------------------- */
+
+
+
+.type1 {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 36px;
+    display: table;
+}
+
+.game_sa {
+    position: relative;
+    display: inline-table;
+    margin: 0 auto;
+    width: 50%;
+    right: 1%;
+    padding-bottom: 50%;
+    background: url(../images/btn_lobby_casino_sa.png) no-repeat;
+    background-size: 100%;
+}
+
+.game_sa span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 105%;
+    font-size: 0.7em;
+    text-align: center;
+    left: 15px;
+}
+
+.game_sa span::before {
+    content: '';
+    background-image: url(../images/ic_lobby_sa.png);
+    background-size: 32px 17px;
+    position: absolute;
+    width: 32px;
+    height: 17px;
+    left: 90px;
+}
+
+
+.game_allbet {
+    position: relative;
+    display: inline-table;
+    margin: 0 auto;
+    width: 50%;
+    left: 1%;
+    padding-bottom: 50%;
+    background: url(../images/btn_lobby_casino_allbet.png) no-repeat;
+    background-size: 100%;
+}
+
+.game_allbet span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 105%;
+    font-size: 0.7em;
+    text-align: center;
+    left: 15px;
+}
+
+.game_allbet span::before {
+    content: '';
+    background-image: url(../images/ic_lobby_allbet.png);
+    background-size: 32px 17px;
+    position: absolute;
+    width: 32px;
+    height: 17px;
+    left: 90px;
+}
+
+.game_dg {
+    position: relative;
+    display: inline-table;
+    margin: 0 auto;
+    width: 50%;
+    right: 1%;
+    padding-bottom: 50%;
+    background: url(../images/btn_lobby_casino_dg.png) no-repeat;
+    background-size: 100%;
+    z-index: 9999;
+}
+
+.game_dg span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 105%;
+    font-size: 0.7em;
+    text-align: center;
+    left: 15px;
+}
+
+.game_dg span::before {
+    content: '';
+    background-image: url(../images/ic_lobby_dg.png);
+    background-size: 32px 17px;
+    position: absolute;
+    width: 32px;
+    height: 17px;
+    left: 90px;
+}
+
+.game_og {
+    position: relative;
+    display: inline-table;
+    margin: 0 auto;
+    width: 50%;
+    left: 1%;
+    padding-bottom: 50%;
+    background: url(../images/btn_lobby_casino_og.png) no-repeat;
+    background-size: 100%;
+    z-index: 9999;
+}
+
+.game_og span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 105%;
+    font-size: 0.7em;
+    text-align: center;
+    left: 15px;
+}
+
+.game_og span::before {
+    content: '';
+    background-image: url(../images/ic_lobby_og.png);
+    background-size: 32px 17px;
+    position: absolute;
+    width: 32px;
+    height: 17px;
+    left: 90px;
+}
+
+.game_lh span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 105%;
+    font-size: 0.7em;
+    text-align: center;
+    left: 15px;
+}
+
+.game_lh span::before {
+    content: '';
+    background-image: url(../images/ic_lobby_lh.png);
+    background-size: 32px 17px;
+    position: absolute;
+    width: 32px;
+    height: 17px;
+    left: 90px;
+}
+
+.game_lh {
+    position: relative;
+    display: inline-table;
+    margin: 0 auto;
+    width: 50%;
+    right: 1%;
+    padding-bottom: 50%;
+    background: url(../images/btn_lobby_lotto_lh.png) no-repeat;
+    background-size: 100%;
+    z-index: 9999;
+}
+
+
+.game_og {
+    position: relative;
+    display: inline-table;
+    margin: 0 auto;
+    width: 50%;
+    left: 1%;
+    padding-bottom: 50%;
+    background: url(../images/btn_lobby_casino_og.png) no-repeat;
+    background-size: 100%;
+    z-index: 9999;
+}
+
+.game_bingostar span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 105%;
+    font-size: 0.7em;
+    text-align: center;
+    left: 15px;
+}
+
+.game_bingostar span::before {
+    content: '';
+    background-image: url(../images/ic_lobby_bingo.png);
+    background-size: 32px 17px;
+    position: absolute;
+    width: 32px;
+    height: 17px;
+    left: 90px;
+}
+
+.game_bingostar {
+    position: relative;
+    display: inline-table;
+    margin: 0 auto;
+    width: 50%;
+    left: 1%;
+    padding-bottom: 50%;
+    background: url(../images/btn_lobby_lotto_bingostar.png) no-repeat;
+    background-size: 100%;
+    z-index: 9999;
+}
+
+.game_super span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 105%;
+    font-size: 0.7em;
+    text-align: center;
+    left: 15px;
+}
+
+.game_super span::before {
+    content: '';
+    background-image: url(../images/ic_lobby_super.png);
+    background-size: 32px 17px;
+    position: absolute;
+    width: 32px;
+    height: 17px;
+    left: 90px;
+}
+
+.game_super {
+    position: relative;
+    display: inline-table;
+    margin: 0 auto;
+    width: 50%;
+    left: 1%;
+    padding-bottom: 50%;
+    background: url(../images/btn_lobby_sport_super.png) no-repeat;
+    background-size: 100%;
+    z-index: 9999;
+}
+
+
+.type2 {
+    position: relative;
+    margin: 0 auto;
+}
+
+.scrollcontainer {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+}
+
+.gamerow {
+    margin: 0 auto;
+}
+
+.piclist {
+    display: table-cell;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    left: -0.5%;
+    background-size: 160px auto;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#index-game .wrap2 {
+    display: table-cell;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2%;
+    width: 46%;
+    padding-top: 40px;
+}
+
+#index-game .wrap2 dl {
+    position: relative;
+    display: table-cell;
+    margin: 0 auto;
+    /* width: 25%; */
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#index-game .wrap2 dl a {
+    display: block;
+}
+
+#index-game .wrap2 dt {
+    position: relative;
+}
+
+#index-game .wrap2 dt img {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+
+.bngss {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: url(../images/ic_lobby_bngss.png) no-repeat;
+    background-position: 0px 5px;
+    background-size: 50%;
+}
+
+.qtss {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: url(../images/ic_lobby_qtss.png) no-repeat;
+    background-position: 0px 5px;
+    background-size: 50%;
+}
+
+.sass {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: url(../images/ic_lobby_sass.png) no-repeat;
+    background-position: 0px 5px;
+    background-size: 50%;
+}
+
+.amebass {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: url(../images/ic_lobby_amebass.png) no-repeat;
+    background-position: 0px 5px;
+    background-size: 50%;
+}
+
+.isbss {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: url(../images/ic_lobby_isbss.png) no-repeat;
+    background-position: 0px 5px;
+    background-size: 50%;
+}
+
+.pngss {
+    position: absolute;
+    display: block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background: url(../images/ic_lobby_pngss.png) no-repeat;
+    background-position: 0px 5px;
+    background-size: 50%;
+}
+
+.type2col2 {
+    position: relative;
+    display: table-cell;
+    width: 50%;
+    padding: 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.7);
+}
+
+.type2col2 p {
+    position: relative;
+    padding-left: 22px;
+    line-height: 30px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: #000;
+}
+
+.type2col2 span {
+    display: block;
+    width: 150px;
+    position: relative;
+    line-height: 25px;
+    font-size: 0.75em;
+    color: #999;
+    font-weight: 400;
+}
+
+.type2col3 {
+    position: relative;
+    display: table-cell;
+    width: 18%;
+    vertical-align: middle;
+    padding: 10px 25px 10px 10px;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.7);
+}
+
+.type2col3 p {
+    position: relative;
+    float: left;
+    line-height: 10px;
+    font-size: 16px;
+    color: #4de41e;
+    padding: 10px;
+    border-radius: 18px;
+    background: #efefefa3;
+}
+
+.bannerpic {
+    width: 100%;
+    padding-bottom: 34.72%;
+    background: url("../images/banner_lobby_no1.png") no-repeat;
+    background-size: 92%;
+    background-position: center;
+}
+
+.msgbar {
+    position: relative;
+    display: block;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    background-color: #fefcf4;
+    width: 80%;
+    border-radius: 50px;
+    top: 12px;
+    margin: 0 auto;
+    padding: 0 5%;
+    font-size: 0.7em;
+}
+
+.msgbar::before {
+    content: '';
+    background-image: url(../images/ic_lobby_loud.png);
+    background-size: 23px 15px;
+    position: absolute;
+    width: 23px;
+    height: 15px;
+    left: 20px;
+    top: 7px;
+}
+
+.msgbar span {
+    color: #f00;
+}
+
+/*******客服彈窗start*******/
+
+.server_win {
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    height: 25%;
+    z-index: 100000;
+
+
+}
+
+.server_outer {
+    width: 100%;
+    height: 100%;
+    opacity: 0.95;
+    background: #dddddd;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+}
+
+.ser_content {
+    width: 100%;
+    position: absolute;
+    padding-bottom: 18px;
+    left: 0;
+    top: 0;
+}
+
+.service_tit {
+    display: block;
+    width: 100%;
+    line-height: 2em;
+    padding: 0 0 0 5%;
+    background: #eaeaea;
+    color: #444444;
+    font-weight: bold;
+    border-radius: 15px 15px 0px 0px/15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 0px 0px/15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 0px 0px/15px 15px 15px 15px;
+}
+
+.service_winclose {
+    position: absolute;
+    display: block;
+    width: 3%;
+    height: 11%;
+    background: url(../images/btn_more_close_normal.png) no-repeat;
+    background-size: contain;
+    top: 15px;
+    right: 20px;
+}
+
+
+.contact_btn li a {
+    width: 100%;
+    display: inline-block;
+    line-height: 3.5em;
+    padding: 0 1.5em 0 4.5em;
+    font-weight: bold;
+
+
+}
+
+
+.online24_ser {
+    background: url(../images/ic_shortcut_customer@3x.png) no-repeat 30px center;
+    background-size: 10%;
+}
+
+.online24_ser::after {
+    content: url(../images/btn_more_nextpage_normal.png);
+    position: absolute;
+    right: 5%;
+}
+
+.line_ser {
+    background: url(../images/ic_shortcut_line@3x.png) no-repeat 30px center;
+    background-size: 10%;
+
+}
+
+.line_ser::after {
+    content: url(../images/btn_more_nextpage_normal.png);
+    position: absolute;
+    right: 5%;
+}
+
+
+
+
+/*******客服彈窗end*******/
+
+
+
+/*--------------navigationbar end-----------------*/
+
+@media screen and (min-width: 1024px) {
+
+    .lobbyall {
+        font-size: 30px;
+    }
+
+    .gamett1 {
+        top: 3.5em;
+    }
+
+    .gamett {
+        height: 80px
+    }
+
+    .gamerow {
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
+    .type1 {
+        margin-top: 80px;
+    }
+
+    .game_sa span::before {
+        left: 140px;
+    }
+
+    .game_allbet span::before {
+        left: 140px;
+    }
+
+    .game_dg span::before {
+        left: 140px;
+    }
+
+    .game_og span::before {
+        left: 140px;
+    }
+
+    .game_super span::before {
+        left: 140px;
+    }
+
+    .game_lh span::before {
+        left: 140px;
+    }
+
+    .game_bingostar span::before {
+        left: 140px;
+    }
+
+    #index-game .wrap2 {
+        padding: 0 8%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .lobbybtn {
+        width: 61px;
+        height: 29px;
+        line-height: 29px;
+        font-size: 14px;
+    }
+
+    .lobbyall {
+        font-size: 20px;
+    }
+
+    .gamett1 {
+        top: 3.2em;
+    }
+
+    .type1 {
+        margin-top: 36px;
+    }
+
+
+    .game_sa span::before {
+        left: 15px;
+    }
+
+    .game_allbet span::before {
+        left: 15px;
+    }
+
+    .game_dg span::before {
+        left: 12px;
+    }
+
+    .game_og span::before {
+        left: 15px;
+    }
+
+    .game_super span::before {
+        left: 15px;
+    }
+
+    .game_lh span::before {
+        left: 15px;
+    }
+
+    .game_bingostar span::before {
+        left: 15px;
+    }
+
+
+    
+}
+
+
+
+@media screen and (max-width: 360px) {
+    .lobbyall {
+        font-size: 16px;
+    }
+
+    .online24_ser::after {
+        content: url(../images/btn_more_nextpage_small.png);
+        position: absolute;
+        right: 5%;
+    }
+
+    .line_ser::after {
+        content: url(../images/btn_more_nextpage_small.png);
+        position: absolute;
+        right: 5%;
+    }
+
+    .service_winclose {
+        width: 4%;
+        top: 10px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .lobbyall {
+        font-size: 16px;
+    }
+
+    .game_sa span::before {
+        left: 8px;
+    }
+
+    .game_allbet span::before {
+        left: 8px;
+    }
+
+    .game_dg span::before {
+        left: 8px;
+    }
+
+    .game_og span::before {
+        left: 8px;
+    }
+
+    .game_super span::before {
+        left: 8px;
+    }
+
+    .game_lh span::before {
+        left: 8px;
+    }
+
+    .game_bingostar span::before {
+        left: 8px;
+    }
+
+    .contact_btn li a {
+        line-height: 3.5em;
+    }
+}
+
+

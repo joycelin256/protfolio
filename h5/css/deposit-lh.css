@@ -1,0 +1,1133 @@
+body::-webkit-scrollbar{
+    display:none;
+}
+
+.bg {
+    background: #fafafa;
+}
+
+/* -----------------------header-------------------------- */
+.account {
+    font-size: 32px;
+}
+
+.acc-header {
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 16px 5% 16px 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #eeeeee;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.acc-header .arrow {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.acc-header .arrow a {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../images/btn_gamelist_back_normal.png) no-repeat;
+    background-size: 60%;
+}
+
+.acc-header .headline-text {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    text-align: center;
+}
+
+.acc-header .headline-text span {
+    color: #000001;
+    font-size: 1em;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.acc-header .headline-rbtn {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: right;
+}
+
+.acc-header .headline-rbtn a {
+    display: inline-block;
+    color: #b5b5b5;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+/* -----------------------header-end-------------------------- */
+
+
+/* -----------------------deposit-main------------------------ */
+.person-amout-content {
+    position: fixed;
+    top: 72px;
+    width: 100%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    padding: 8px 4%;
+    align-items: center;
+    z-index: 5;
+}
+
+.person-amout-content>div {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person-amout-content p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #b6b9ba;
+}
+
+
+.person-amout {
+    font-size: 36px;
+    line-height: 46px;
+    color: #52c94b;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.btn_reload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -22px;
+    left: calc(50% - 22px);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 4px 10px 1px rgba(238,238,238,.55);
+}
+.btn_reload::after {
+    position: relative;
+    left: 1px;
+    width: 50%;
+    height: 50%;
+    content: '';
+    background: url(../images/btn_deposit_reload.png) no-repeat center;
+    background-size: 100%;
+}
+
+.depo-mainconten{
+    padding: 200px 4% 10% 4%;
+}
+.depo-content {
+    padding: 72px 4% 10% 4%;
+}
+
+.depo-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    color: #535353;
+}
+
+.depo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 105px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #343434;
+    border: 1px solid #eeeeee;
+    background:#ffffff;
+    margin-bottom: 4%;
+    padding: 18px;
+    box-shadow: 0 4px 10px 1px rgba(238,238,238,.55);
+}
+.depo-item a{
+    widows: 100%;
+}
+.depo-item-info{
+    display: flex;
+    align-items: center;
+    width: 60%;
+}
+.depo-item-info h1{
+    margin-left: 8%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #535353;
+}
+.ic_bank{
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/ic_bank.png) no-repeat center;
+    background-size: 100%;
+}
+.ic_shop{
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/ic_shop.png) no-repeat center;
+    background-size: 100%;
+}
+.ic_atm{
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: url(../images/ic_atm.png) no-repeat center;
+    background-size: 100%;
+}
+.btn_depo_next{
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/btn_more_nextpage_normal.png) no-repeat;
+    background-size:60%;
+}
+
+
+
+
+
+.bank-infor {
+    background: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #eeeeee;
+    -webkit-box-shadow: 0 4px 10px #eeeeee;
+    box-shadow: 0 4px 10px #eeeeee;
+}
+
+.bank-text {
+    position: relative;
+    padding: 3% 5% 2% 5%;
+    font-size: 17px;
+    line-height: 28px;
+    color: #272629;
+}
+
+.bank-text a {
+    font-size: 13px;
+    color: #b6b9ba;
+    border: 1px solid #b6b9ba;
+    border-radius: 50px;
+    padding: 0 10px;
+    margin-left: 16px;
+    vertical-align: bottom;
+}
+
+.bank-text .prompt {
+    color: #ff6c8f;
+    margin-top: 2%;
+}
+
+.bank-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 5px;
+    height: 100%;
+    background: #52c94b;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../images/btn_deposit_dropdown.png") no-repeat #ffffff;
+    background-position: 97%;
+    background-size: 4%;
+}
+
+
+select,
+input {
+    font-family: 'Noto Sans TC', "Microsoft JhengHei", "微軟正黑體", "Heiti TC", 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #b6b9ba;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #b6b9ba;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19 */
+    color: #b6b9ba;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10 */
+    color: #b6b9ba;
+}
+
+.submit-input select {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #b6b9ba;
+    border: 1px solid #eeeeee;
+    margin-bottom: 4%;
+}
+
+.submit-input select:focus {
+    outline: none;
+    border: 1px solid #52c94b;
+    -webkit-box-shadow: 0 0 0 4px #52c94b21 inset;
+    box-shadow: 0 0 0 4px #52c94b21 inset;
+}
+
+.amount-input {
+    position: relative;
+}
+
+.submit-input input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #343434;
+    border: 1px solid #eeeeee;
+    margin-bottom: 4%;
+}
+
+#bankaccount {
+    margin-bottom: 2%;
+}
+
+.submit-input input:focus {
+    -webkit-box-shadow: 0 0 0 4px #52c94b21 inset;
+    box-shadow: 0 0 0 4px #52c94b21 inset;
+    border: 1px solid #52c94b;
+}
+
+
+.btn-cancel {
+    position: absolute;
+    top: 24%;
+    right: 3%;
+    display: none;
+    width: 20px;
+    height: 20px;
+    background: url(../images/btn_input_cancel.png) no-repeat;
+    background-size: 100%;
+}
+
+.submit-input input:valid+.btn-cancel {
+    display: inline;
+}
+
+.submit-input select::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/btn_deposit_dropdown.png") no-repeat #ffffff;
+}
+
+.amount ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.amount ul li {
+    float: left;
+    width: 23%;
+    margin-right: 2.66%;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.amount ul li:last-child {
+    margin-right: 0;
+}
+
+.amount ul li a {
+    display: block;
+    color: #b6b9ba;
+    line-height: 46px;
+}
+
+.amount ul li:hover {
+    border: 1px solid #ff6c8f;
+}
+
+.amount ul li:hover>a {
+    color: #ff6c8f;
+}
+
+.amount-atm ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.amount-atm ul li {
+    float: left;
+    width: 23%;
+    margin-right: 2%;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.amount-atm ul li:last-child {
+    margin-right: 0;
+}
+
+.amount-atm ul li a {
+    display: block;
+    color: #b6b9ba;
+    line-height: 46px;
+}
+
+.amount-atm ul li:hover {
+    border: 1px solid #ff6c8f;
+}
+
+.amount-atm ul li:hover>a {
+    color: #ff6c8f;
+}
+
+
+.send-out {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(140, 235, 141, 1)), color-stop(85%, rgba(83, 212, 207, 1)));
+    background: linear-gradient(90deg, rgba(140, 235, 141, 1)15%, rgba(83, 212, 207, 1)85%);
+    line-height: 56px;
+    border-radius: 50px;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.addbank {
+    margin-top: 4%;
+}
+
+.clear-both {
+    clear: both;
+}
+
+/* -----------------------------pop-window----------------------------- */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    z-index: 2;
+
+}
+
+.modal-content {
+    position: relative;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.show-modal .modal-content {
+    z-index: 6;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+}
+
+
+.mask::before {
+    position: absolute;
+    z-index: 6;
+    background: rgba(0, 0, 0, 0.7);
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.popwindow {
+    width: 82vw;
+    background: rgba(255, 255, 255, 0.87);
+    border-radius: 10px;
+    text-align: center;
+    padding: 18% 7% 5% 7%;
+}
+
+.popwindow img {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    -webkit-transform: translate(-54%, 0);
+    transform: translate(-54%, 0);
+    width: 60%;
+}
+
+.popwindow h1 {
+    font-size: 32px;
+    color: #313030;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.popwindow h2 {
+    font-size: 20px;
+    color: #ff6c8f;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.popwindow p {
+    font-size: 20px;
+    color: #939393;
+    line-height: 26px;
+}
+
+.pop-close {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/btn_more_close_normal.png) no-repeat;
+    background-size: 100%;
+}
+
+.popbtn-box {
+    margin-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.popbtn-box li a {
+    display: block;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 5%;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+}
+
+.btn-border {
+    border: 1px solid #52c94b;
+    color: #52c94b;
+}
+
+.btn-gradient {
+    color: #ffffff;
+    background: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(140, 235, 141, 1)), color-stop(85%, rgba(83, 212, 207, 1)));
+    background: linear-gradient(90deg, rgba(140, 235, 141, 1)15%, rgba(83, 212, 207, 1)85%);
+}
+
+ul.btn-w1 li {
+    width: 100%;
+}
+
+ul.btn-w2 li {
+    width: 48%;
+}
+
+
+.prompt-msg {
+    display: none;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    height: 72px;
+    line-height: 72px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(15%, rgba(82, 201, 75, 0.98)), color-stop(85%, rgba(59, 175, 52, 0.98)));
+    background: linear-gradient(90deg, rgba(82, 201, 75, 0.98)15%, rgba(59, 175, 52, 0.98)85%);
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 20;
+}
+
+/* -----------------------------notice-word----------------------------- */
+.notice {
+    margin: 5% 0;
+    padding: 5% 3.5%;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+.notice h5 {
+    text-align: center;
+    color: #ff6c8f;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+
+.notice h5:before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: url(../images/ic_deposit_notice.png) no-repeat;
+    background-size: 100%;
+    vertical-align: sub;
+    margin-right: 10px;
+}
+
+.notice ol {
+    list-style: decimal;
+    padding-left: 5%;
+    font-size: 16px;
+    color: #b6b9ba;
+}
+
+.notice ol span {
+    color: #ff6c8f;
+}
+
+.notice ol a {
+    color: #68b6ff;
+}
+
+
+.notice ol li {
+    margin-bottom: 3%;
+    line-height: 20px;
+    padding-left: 3px;
+}
+
+.notice ol li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* -----------------------------addcard-info----------------------------- */
+.bankcard-bg {
+    width: 100%;
+    height: 245px;
+    margin-bottom: 4%;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 4%;
+
+}
+
+.bankcard-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.bankcard-bg:last-of-type {
+    margin-bottom: 0;
+}
+
+.bankcard-green {
+    background: url(../images/bg_greenbankcard.png) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    -webkit-box-shadow: 0 4px 10px 1px rgba(108, 215, 166, .55);
+    box-shadow: 0 4px 10px 1px rgba(108, 215, 166, .55);
+}
+
+.bankcard-red {
+    background: url(../images/bg_redbankcard.png) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    -webkit-box-shadow: 0 4px 10px 1px rgba(254, 113, 149, .55);
+    box-shadow: 0 4px 10px 1px rgba(254, 113, 149, .55);
+}
+
+.bankcard-orange {
+    background: url(../images/bg_orangebankcard.png) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    -webkit-box-shadow: 0 4px 10px 1px rgba(246, 157, 110, .55);
+    box-shadow: 0 4px 10px 1px rgba(246, 157, 110, .55);
+}
+
+.bankcard-gray {
+    background: url(../images/bg_graybankcard.png) no-repeat center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.bank-name {
+    font-size: 20px;
+}
+
+.bankcard-num {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+.bancard-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.bancard-content span {
+    margin-left: 10px;
+}
+
+.bankcard-gray h1 {
+    color: #52c94b;
+    text-align: center;
+    font-size: 20px;
+}
+
+.addbankcard {
+    background: url(../images/btn_addbankcard.png) no-repeat;
+    background-size: 100%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* -----------------------------addcard----------------------------- */
+.use-password {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #535353;
+    font-size: 16px;
+    margin-bottom: 4%;
+}
+
+
+.check {
+    margin-right: 3%;
+}
+
+.check:last-child {
+    margin-right: 0;
+}
+
+.check label {
+    vertical-align: middle;
+}
+
+.use-password input[type=radio] {
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid #c8cccc;
+    vertical-align: middle;
+    border-radius: 30px;
+    margin: 0;
+}
+
+.use-password input[type=radio]:checked {
+    -webkit-box-shadow: 0 0 0 4px #fafafa inset;
+    box-shadow: 0 0 0 4px #fafafa inset;
+    background: #52c94b;
+}
+
+.use-password span {
+    color: #b6b9ba;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+
+
+.eyes {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    width: 5%;
+    height: 50px;
+    background: url(../images/btn_eye.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.eyes.active {
+    position: absolute;
+    top: 0;
+    right: 3%;
+    width: 5%;
+    height: 50px;
+    background: url(../images/btn_addcard_closeeye.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+
+
+
+
+
+@media (max-width:767px) {
+
+    /* -----------------------header-------------------------- */
+    .account {
+        font-size: 20px
+    }
+
+    .acc-header {
+        height: 56px;
+        padding: 16px 5% 16px 5%;
+    }
+
+    .acc-header .arrow a {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* -----------------------header-end-------------------------- */
+
+    /* -----------------------deposit-main------------------------ */
+    .depo-maincontent{
+        padding: 172px 4% 10% 4%;
+    }
+    
+    .depo-item-info h1{
+        font-size: 18px;
+    }
+    .person-amout {
+        font-size: 26px;
+    }
+    .person-amout-content {
+        height: 100px;
+        top: 56px;
+    }
+    .person-amout-content p {
+        font-size: 15px;
+    }
+    
+
+    .prompt-msg {
+        height: 56px;
+        line-height: 56px;
+    }
+
+    .depo-content {
+        padding: 56px 4% 10% 4%;
+    }
+    .depo-mainconten{
+        padding: 166px 4% 10% 4%;
+    }
+    .depo-title {
+        font-size: 18px;
+        line-height: 48px;
+    }
+
+    select {
+        background-size: 5%;
+    }
+
+    .send-out {
+        line-height: 48px;
+    }
+
+    .eyes {
+        width: 7%;
+    }
+
+    .eyes.active {
+        width: 7%;
+    }
+
+    /* -----------------------------addcard-info----------------------------- */
+    .bank-name {
+        font-size: 18px;
+    }
+
+    .bankcard-bg {
+        height: 140px;
+    }
+
+    .bankcard-gray h1 {
+        font-size: 18px;
+    }
+
+    .addbankcard {
+        width: 60px;
+        height: 60px;
+    }
+
+    .bancard-content {
+        font-size: 14px;
+    }
+
+    /* -----------------------popwindow-------------------------- */
+    .popwindow img {
+        top: -25%;
+        width: 70%;
+    }
+
+    .popwindow {
+        padding-top: 20%;
+    }
+
+    .popwindow h1 {
+        font-size: 20px;
+    }
+
+    .popwindow h2 {
+        font-size: 18px;
+    }
+
+    .popwindow p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .popbtn-box li a {
+        line-height: 36px;
+        border-radius: 36px;
+    }
+
+    .pop-close {
+        width: 15px;
+        height: 15px;
+    }
+
+    .prompt-msg {
+        height: 56px;
+        line-height: 56px;
+    }
+
+    .notice h5 {
+        font-size: 16px;
+    }
+
+    .notice ol {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width:375px) {
+    .use-password {
+        font-size: 15px;
+    }
+
+    .use-password span {
+        font-size: 14px;
+    }
+
+    /* -----------------------addcard-info-------------------------- */
+    .bankcard-bg {
+        height: 125px;
+    }
+
+
+}
+
+@media (max-width:360px) {
+    .acc-header {
+        height: 44px;
+        padding: 10px 5% 10px 5%;
+    }
+
+    .prompt-msg {
+        height: 44px;
+        line-height: 44px;
+    }
+
+    .depo-content {
+        padding: 44px 4% 10% 4%;
+    }
+
+    /* -----------------------popwindow-------------------------- */
+    .popwindow h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .popwindow p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .use-password {
+        font-size: 14px;
+    }
+
+    .use-password span {
+        font-size: 13px;
+    }
+
+    .use-password input[type=radio] {
+        width: 18px;
+        height: 18px;
+    }
+
+    .use-password input[type=radio]:checked {
+        -webkit-box-shadow: 0 0 0 3.5px #fafafa inset;
+        box-shadow: 0 0 0 3.5px #fafafa inset;
+    }
+
+
+}
+
+@media (max-width:320px) {
+
+    .submit-input input {
+        height: 44px;
+        font-size: 15px;
+    }
+
+    .submit-input select {
+        height: 44px;
+        font-size: 15px;
+    }
+
+    .bank-text {
+        font-size: 16px;
+    }
+
+    .amount ul li a {
+        line-height: 40px;
+    }
+
+    .amount-atm ul li a {
+        line-height: 40px;
+    }
+
+
+    .use-password {
+        font-size: 13px;
+    }
+
+    .use-password span {
+        font-size: 12px;
+    }
+
+    .use-password input[type=radio] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .use-password input[type=radio]:checked {
+        -webkit-box-shadow: 0 0 0 3px #fafafa inset;
+        box-shadow: 0 0 0 3px #fafafa inset;
+    }
+
+    .eyes,
+    .eyes.active {
+        width: 8%;
+        height: 44px;
+    }
+
+    .btn-cancel {
+        width: 18px;
+        height: 18px;
+        top: 22%;
+    }
+
+    /* -----------------------addcard-info-------------------------- */
+    .bankcard-bg {
+        height: 102px;
+    }
+
+}

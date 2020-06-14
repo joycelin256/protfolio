@@ -1,0 +1,574 @@
+body::-webkit-scrollbar{
+    display:none;
+}
+
+.bg{
+    background:#fafafa;
+    
+}
+
+/* -----------------------header-------------------------- */
+.account{
+    font-size: 32px;
+}
+.acc-header {
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 16px 5% 16px 5%;
+    z-index: 5;
+    display: flex;
+	align-items: center;
+}
+.acc-header .arrow { 
+    flex:1;
+}
+.acc-header .arrow a{
+    display:block;
+    width: 26px;
+    height: 26px;
+    background:url(../images/btn_gamelist_back_normal.png) no-repeat;
+    background-size:60%;
+}
+.acc-header .headline-text{
+    flex:2;
+    text-align: center;
+}
+.acc-header .headline-text span {
+    color: #000001;
+    font-size: 1em;
+    font-weight: 500; 
+    vertical-align: middle;
+}
+.acc-header .headline-rbtn{
+    flex:1;
+    text-align: right;
+}
+.acc-header .headline-rbtn a{
+	display:block;
+    color: #b5b5b5;
+    font-weight: bold;
+    font-size: 0.8em;
+} 
+
+/* -----------------------header-end-------------------------- */
+
+.msg-content{
+    padding-top:72px;
+}
+
+.msg-important{
+    font-size:17px;
+    text-align: center;
+    width: 100%;
+    background:rgba(254, 151, 174, 0.15);
+    color:#ff6c8f;
+    padding:3% 0;
+}
+
+.depo-content{
+    padding:0 4% 10% 4%;   
+}
+.depo-title{
+    font-size:20px;
+    font-weight: 500;
+    line-height: 60px;
+    color:#535353;
+}
+
+
+
+.bank-infor{
+    border-radius: 6px;
+    box-shadow:0 4px 10px #eeeeee;
+    background:url(../images/bg_withdaw_orange.png) no-repeat;
+    background-size:cover;
+    padding:4% 4% 1% 4%;
+    box-shadow: 0 3px 12px rgba(246, 157, 110, 0.8);
+    margin-bottom:2%;
+}
+
+.bank-infor select{
+    width: 100%;
+    appearance:none;  
+   -moz-appearance:none;  
+   -webkit-appearance:none;
+    background: url("../images/btn_bank_dropdown.png") no-repeat  #ffffff;
+    background-position:97%;
+    background-size:5%;
+    height: 44px;
+    border-radius: 6px;
+    font-size:17px;
+    color:#f69b6a;
+    border:none;
+    padding-left:16px;
+    font-weight: 500;
+    
+}
+
+.bank-infor select:focus{
+    outline:none;
+}
+
+
+.account-infor{
+    width: 100%;
+    margin:2% 0 2% 0;
+    padding:0 2% 0 4%;
+}
+
+.item-copy{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+
+.item-copy p{
+    font-size:19px;
+    color:#ffffff;
+    text-shadow: 0 0 10px rgba(223, 118, 72, 0.4);
+}
+
+.account-copy{
+    display:block;
+    width: 28px;
+    height: 28px;
+    background:url(../images/btn_bank_copy.png) no-repeat;
+    background-size:100%;
+}
+
+
+
+
+
+.bank-text{
+    position: relative;
+    padding:3% 5% 2% 5%;
+    font-size:17px;
+    line-height: 28px;
+    color:#272629;
+}
+
+.bank-text a{
+    font-size:13px;
+    color:#b6b9ba;
+    border:1px solid #b6b9ba;
+    border-radius: 50px;
+    padding:0 10px;
+    margin-left: 16px;
+    vertical-align: bottom;
+}
+
+.bank-text .prompt{
+    color:#ff6c8f;
+    margin-top:2%;
+}
+
+
+
+
+
+
+
+select::-ms-expand{ 
+    display: none; 
+}
+select{
+    appearance:none;  
+   -moz-appearance:none;  
+   -webkit-appearance:none;
+    background: url("../images/btn_deposit_dropdown.png") no-repeat  #ffffff;
+    background-position:97%;
+    background-size:4%;
+}
+
+
+select,
+input{
+    font-family: 'Noto Sans TC',"Microsoft JhengHei","微軟正黑體","Heiti TC",'Roboto',Arial, Helvetica, sans-serif;
+}
+
+button,
+input{
+    appearance:none;  
+   -moz-appearance:none;  
+   -webkit-appearance:none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #b6b9ba;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #b6b9ba;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19 */
+    color: #b6b9ba;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10 */
+    color: #b6b9ba;
+    }
+    
+    
+
+.submit-input select{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size:16px;
+    padding-left:20px;
+    color:#b6b9ba;
+    border:1px solid #eeeeee;
+    margin-bottom:4%;
+}
+
+.submit-input select:focus{
+    outline:none;
+    border:1px solid #52c94b;
+    box-shadow: 0 0 0 4px #52c94b21 inset;
+}
+
+.amount-input{
+    position: relative;
+}
+
+.submit-input input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size:16px;
+    padding-left:20px;
+    color:#343434;
+    background-color:#ffffff;
+    border:1px solid #eeeeee;
+    margin-bottom:4%;
+}
+
+.submit-input input:focus{
+    box-shadow: 0 0 0 4px #52c94b21 inset;
+    border:1px solid #52c94b;
+}
+
+
+.btn-cancel{
+    position: absolute;
+    top:20%;
+    right:3%;
+    display:none;
+    width: 20px;
+    height: 20px;
+    background:url(../images/btn_input_cancel.png) no-repeat;
+    background-size:100%;
+}
+
+.submit-input input:valid + .btn-cancel {
+     display: inline; 
+    }
+
+.submit-input select::after{
+    position: absolute;
+    top:0;
+    right:0;
+    content:'';
+    display:block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/btn_deposit_dropdown.png") no-repeat  #ffffff;
+}
+
+.amount ul{
+    width: 100%;
+    display:flex;
+}
+
+.amount ul li{
+    float:left;
+    width: 23%;
+    margin-right:2.66%;
+    background:#ffffff;
+    border:1px solid #eeeeee;
+    border-radius: 6px;
+    font-size:16px;
+    text-align: center;
+}
+
+.amount ul li:last-child{
+    margin-right:0;
+}
+
+.amount ul li a{
+    display:block;
+    color:#b6b9ba;
+    line-height: 46px;
+}
+
+.amount ul li:hover{
+    border:1px solid #ff6c8f; 
+}
+
+.amount ul li:hover > a{
+    color:#ff6c8f;
+}
+
+.amount-atm ul{
+    width: 100%;
+    display:flex;
+}
+.amount-atm ul li{
+    float:left;
+    width: 23%;
+    margin-right:2%;
+    background:#ffffff;
+    border:1px solid #eeeeee;
+    border-radius: 6px;
+    font-size:16px;
+    text-align: center;
+}
+
+.amount-atm ul li:last-child{
+    margin-right:0;
+}
+
+.amount-atm ul li a{
+    display:block;
+    color:#b6b9ba;
+    line-height: 46px;
+}
+
+.amount-atm ul li:hover{
+    border:1px solid #ff6c8f; 
+}
+
+.amount-atm ul li:hover > a{
+    color:#ff6c8f;
+}
+
+
+.send-out{
+    display:block;
+    color:#ffffff;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(140, 235, 141, 1)15%, rgba(83, 212, 207, 1)85%);
+    line-height: 56px;
+    border-radius: 50px;
+    margin-top:10%;
+    font-size:20px;
+}
+
+.addbank{
+    margin-top:4%;
+}
+
+.clear-both{
+    clear:both;
+}
+
+
+
+.prompt-msg{
+	display: none;
+	position: fixed;
+	width:100%;
+	margin: 0 auto;
+	height: 72px;
+	line-height: 72px;
+	background: linear-gradient(90deg, rgba(82, 201, 75, 0.98)15%, rgba(59, 175, 52, 0.98)85%);
+	font-size:20px;
+	font-weight: 400;
+	color:#fff;
+	letter-spacing: 1px;
+    text-align:center;
+    z-index:20;
+}
+
+/* -----------------------------notice-word----------------------------- */
+
+.notice{
+    margin:5% 0;
+    padding:5% 3.5%;
+    background:#ffffff;
+    border-radius: 6px;
+}
+
+.notice h5{
+    text-align: center;
+    color:#ff6c8f;
+    font-size:16px;
+    margin-bottom:5%;
+}
+
+.notice h5:before{
+    content:'';
+    display:inline-block;
+    width: 22px;
+    height: 22px;
+    background:url(../images/ic_deposit_notice.png) no-repeat;
+    background-size:100%;
+    vertical-align: sub;
+    margin-right:10px;
+}
+
+.notice ol{
+    list-style:decimal;
+    padding-left:5%;
+    font-size:14px;
+    color:#b6b9ba;
+}
+.notice ol span{
+    color:#ff6c8f;
+}
+
+.notice ol a{
+    color:#68b6ff;
+}
+
+
+.notice ol li{
+    margin-bottom:3%;
+    line-height: 20px;
+    padding-left:3px;
+}
+
+.notice ol li:last-child{
+    margin-bottom:0;
+}
+
+/* -----------------------------notice-word-end----------------------------- */
+
+
+
+
+
+@media (max-width:767px){
+    /* -----------------------header-------------------------- */
+    .account{
+        font-size: 20px
+    }
+    .acc-header{
+        height: 56px;
+        padding: 16px 5% 16px 5%;
+    }
+
+    .acc-header .arrow a{
+        width: 18px;
+        height: 18px;
+    }
+    /* -----------------------header-end-------------------------- */
+    .prompt-msg{
+        height: 56px;
+        line-height: 56px;
+    }
+
+    .msg-content{
+        padding-top:56px;
+    }
+    .depo-content{
+        padding:0 4% 10% 4%;   
+    }
+    .depo-title{
+        font-size:18px;
+        line-height: 48px;
+    }
+    select{
+        background-size:5%;
+    }
+    .btn-cancel{
+        top:24%;
+    }
+    .send-out{
+        line-height: 48px;
+    }
+
+    .eyes{
+        width: 7%;
+    }
+    .eyes.active{
+        width: 7%;
+    }
+
+
+   
+    
+}
+
+@media (max-width:375px){
+    
+
+
+}
+
+
+
+
+@media (max-width:360px){
+	.acc-header{
+		height: 44px;
+		padding: 10px 5% 10px 5%;
+    }
+
+    .prompt-msg{
+        height: 44px;
+        line-height: 44px;
+    }
+
+    .msg-content{
+        padding-top:44px;
+    }
+    .depo-content{
+        padding:0 4% 10% 4%;   
+    }
+
+    
+}
+  
+@media (max-width:320px){
+    
+    .submit-input input{
+        height: 44px;
+        font-size:15px;
+    }
+    .submit-input select{
+        height: 44px;
+        font-size:15px;
+    }
+    .bank-text{
+        font-size:16px;
+    }
+    .amount ul li a{
+        line-height: 40px;
+    }
+    .amount-atm ul li a{
+        line-height: 40px;
+    }
+
+
+    .btn-cancel{
+        width: 18px;
+        height: 18px;
+        top:22%;
+    }
+
+
+    .bank-infor select{
+        height: 44px;
+        font-size:17px;
+    }
+
+    .item-copy{
+        padding: 2.5% 0;
+    }
+
+    .item-copy p{
+        font-size:18px;
+    }
+
+    .account-copy{
+        width: 26px;
+        height: 26px;
+    }
+
+   
+}

@@ -1,0 +1,184 @@
+
+
+.nav-bar{
+    position:fixed;
+    z-index: 9999;
+    width: 100%;
+    bottom:0px;
+    box-shadow: 0 -10px 20px rgba(24, 143, 108, 0.10);
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.nav-bar ul{
+    padding: 0 1.5%;
+}
+.nav-bar ul li{
+    float:left;
+    width: 20%;
+    text-align:center;
+    padding: 1.5% 0;
+}
+.nav-bar ul li a{
+    display:inline-block;
+    font-size:15px;
+    color:#7b7d7e;
+}
+
+.nav-bar ul li a.active{
+    color:#28bbb5;
+}
+
+.nav-game a:before{
+    content:"";
+    display:block;
+    width: 40px;
+    height: 40px;
+    margin-bottom:3px;
+    background:url(../images/btn_nav_game_normal.svg) no-repeat;
+    background-size:100%;
+}
+.nav-game a.active:before{
+    background:url(../images/btn_nav_game_active.svg) no-repeat;
+    background-size:100%;
+}
+.nav-wallet a:before{
+    content:"";
+    display:block;
+    width: 40px;
+    height: 40px;
+    margin-bottom:3px;
+    background:url(../images/btn_nav_wallet_normal.svg) no-repeat;
+    background-size:100%;
+}
+.nav-wallet a.active:before{
+    background:url(../images/btn_nav_wallet_active.svg) no-repeat;
+    background-size:100%;
+}
+.nav-promotion a:before{
+    content:"";
+    display:block;
+    width: 40px;
+    height: 40px;
+    margin-bottom:3px;
+    background:url(../images/btn_nav_promotion_normal.svg) no-repeat;
+    background-size:100%;
+}
+.nav-promotion a.active:before{
+    background:url(../images/btn_nav_promotion_active.svg) no-repeat;
+    background-size:100%;
+}
+.nav-customer a:before{
+    content:"";
+    display:block;
+    width: 40px;
+    height: 40px;
+    margin-bottom:3px;
+    background:url(../images/btn_nav_customer_normal.svg) no-repeat;
+    background-size:100%;
+}
+.nav-customer a.active:before{
+    background:url(../images/btn_nav_customer_active.svg) no-repeat;
+    background-size:100%;
+}
+.nav-my a:before{
+    content:"";
+    display:block;
+    width: 40px;
+    height: 40px;
+    margin-bottom:3px;
+    background:url(../images/btn_nav_my_normal.svg) no-repeat;
+    background-size:100%;
+}
+.nav-my a.active:before{
+    background:url(../images/btn_nav_my_active.svg) no-repeat;
+    background-size:100%;
+}
+.nav-promotion a{
+    position: relative;
+}
+.nav-promotion span{
+    font-size:22px;
+    font-weight:bold;
+    position:absolute;
+    bottom:30px;
+    right:14px;
+    color:#1fd00a;
+}
+
+.mask-wallet{
+    position:fixed;
+    display:block;
+    width: 300px;
+    height: 30px;
+    background:rgba(0,0,0,0.7);
+    z-index:10;
+}
+
+
+
+
+@media (max-width:767px){
+
+    /*--------------navigationbar-----------------*/
+    .bar-bg{
+        padding-bottom: 14%;
+    }
+    .nav-bar ul li a{
+        font-size:12px;
+    }
+    .nav-game a:before,
+    .nav-wallet a:before,
+    .nav-promotion a:before,
+    .nav-customer a:before,
+    .nav-my a:before{
+        width: 30px;
+        height: 30px;
+        margin-bottom:2px;
+    }
+    .nav-promotion a{
+        position: relative;
+    }
+    .nav-promotion span{
+        font-size:12px;
+        font-weight:bold;
+        position:absolute;
+        bottom:21px;
+        right:10px;
+        color:#1fd00a;
+    }
+    /*--------------navigationbar end-----------------*/
+}
+
+@media (max-width:375px){
+    
+    .nav-game a:before,
+    .nav-wallet a:before,
+    .nav-promotion a:before,
+    .nav-customer a:before,
+    .nav-my a:before{
+        width: 28px;
+        height: 28px;
+        margin-bottom:1px;
+    }
+
+
+}
+
+@media (max-width:320px){
+    .bar-bg{
+        padding-bottom:14.5%;
+    }
+    .nav-game a:before,
+    .nav-wallet a:before,
+    .nav-promotion a:before,
+    .nav-customer a:before,
+    .nav-my a:before{
+        width: 26px;
+        height: 26px;
+        margin-bottom:1px;
+    }
+ 
+    
+    
+}

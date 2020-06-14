@@ -1,0 +1,644 @@
+body::-webkit-scrollbar{
+    display:none;
+}
+
+.bg {
+    background: #fafafa;
+}
+
+.member {
+    /* font-size: 32px; */
+    font-size: 28px;
+}
+
+.member-header {
+    position: relative;
+    width: 100%;
+    background: url(../images/bg_member-header.png)no-repeat transparent;
+    background-size: 100%;
+    /* background: linear-gradient(to bottom, #efffe9 0%, #faffec 49%, #ffffff 100%); */
+    /* background: linear-gradient(135deg, #89e992 0%,#58d6ca 100%); */
+    /* border-bottom: 1px solid #eeeeee; */
+    /* background-color: #fff; */
+}
+
+.header-btn ul {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 3%;
+}
+
+.btn-item {
+    flex: 1;
+    text-align: center;
+    /* font-size: 0.8em; */
+    font-size: 22px;
+    font-weight: 400;
+}
+.header-btn{
+    width: 94%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 4%;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 10px 15px rgba(238,238,238,.65);
+    /* border-bottom: 3px solid #eeeeee; */
+}
+
+.member-recharge a {
+    color: #5fc650;
+}
+
+.member-recharge a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 80%;
+    background: url(../images/btn_member_recharge_normal.png) no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.member-withdraw a {
+    color: #fdb958;
+}
+
+.member-withdraw a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 80%;
+    background: url(../images/btn_member_withdraw_normal.png) no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.member-friend a {
+    color: #6eb3ff;
+}
+
+.member-friend a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 80%;
+    background: url(../images/btn_member_friend_normal.png) no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.member-vip a {
+    color: #ff6c8f;
+}
+
+.member-vip a:before {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 80%;
+    background: url(../images/btn_member_vip_normal.png) no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+
+.edit {
+    position: absolute;
+    right: 4%;
+    top: 26%;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.edit:after {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 70px;
+    background: url(../images/btn_more_nextpage_normal2.png) no-repeat;
+    background-size: 80%;
+    background-position: 0 45%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.person-infor {
+    padding: 7% 0 18% 0;
+    width: 100%;
+}
+
+.infor-centent {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.person-infor p {
+    font-size: 16px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* border: 1px solid rgba(181,181,181,.6); */
+    border: 1px solid #fff;
+    padding: 3px 8px;
+    display: inline-block;
+    letter-spacing: .05em;
+    border-radius: 10px;
+    color: #fff;
+    /* background-color: #fff; */
+}
+
+
+.vip1-icon {
+    background: url(../images/ic_vip_lv1.png) no-repeat;
+    background-position: center;
+}
+
+.vip2-icon {
+    background: url(../images/ic_vip_lv2.png) no-repeat;
+    background-position: center;
+}
+
+.vip3-icon {
+    background: url(../images/ic_vip_lv3.png) no-repeat;
+    background-position: center;
+}
+
+.vip4-icon {
+    background: url(../images/ic_vip_lv4.png) no-repeat;
+    background-position: center;
+}
+
+.vip-content {
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    /* background-color: rgba(255,255,255,.9); */
+    /* background-image: linear-gradient(145deg, #fdfbfb 0%, #ebedee 100%); */
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #fff;
+    background: #fafafa;
+    /* box-shadow: 0 15px 35px rgba(238, 238, 238, .8); */
+}
+
+.circle-spacer {
+    position: relative;
+    padding-top: 100%;
+    float: none;
+}
+
+.vip-content img {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    float: none;
+    border-radius: 50%;
+    width: 70% !important;
+    height: 70% !important;
+    object-fit: cover;
+    margin: auto;
+    /* filter: drop-shadow(0 5px 12px rgba(0,0,0,.2)); */
+}
+
+.vip1,
+.vip2,
+.vip3,
+.vip4 {
+    margin-top: 6%;
+    margin-bottom: 4%;
+    font-size: 22px;
+    color: #fff;
+}
+
+
+
+.vip2 {
+    color: #0683f7;
+}
+
+.vip3 {
+    color: #a128fa;
+}
+
+.vip4 {
+    color: #f56e11;
+}
+
+.member-content{
+    position:relative;
+    
+}
+.white-block {
+    /* background: #ffffff; */
+    padding-top: 20%;
+    margin-bottom: 1.5%;
+}
+
+.assets-block {
+    background: #ffffff;
+    padding: 0% 4% 0 4%;
+    margin: 14.4% 3% 1.5% 3%;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+}
+
+.bet-title p,
+.funds-title p,
+.safety-title p,
+.more-title p {
+    /* font-size: 0.85em; */
+    font-size: 14px;
+    line-height: 12px;
+    color: #b5b5b5;
+    /* background-color: bisque; */
+    font-weight: 300;
+    margin-left: 54px;
+}
+
+
+.assets-block ul li,
+.record-block ul li,
+.setting-block ul li {
+    /* font-size: 0.80em; */
+    font-size: 24px;
+    font-family: 'Noto Sans TC';
+
+}
+
+.assets-block ul li a,
+.setting-block ul li a,
+.record-block ul li a {
+    color: #535353;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totle-title:before {
+    display: inline-block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    position: relative;
+    top: -2px;
+    /* height: 70px; */
+    background: url(../images/ic_member_overage.svg) no-repeat;
+    background-size: 90%;
+    background-position: 0 40%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.friend-title:before {
+    display: inline-block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    position: relative;
+    background: url(../images/ic_member_friends.svg) no-repeat;
+    background-size: 90%;
+    background-position: 0 40%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.vip-title:before {
+    display: inline-block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    position: relative;
+    background: url(../images/ic_member_vip.svg) no-repeat;
+    background-size: 90%;
+    background-position: 0 40%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.message-title:before {
+    display: inline-block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    background: url(../images/ic_member_message.svg) no-repeat;
+    background-size: 90%;
+    background-position: 0 40%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.record-block {
+    background: #ffffff;
+    padding: 0% 4% 0 4%;
+    /* margin-bottom: 1.5%; */
+    margin: 1.5% 3%;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+}
+
+.record-block ul li a {
+    color: #535353;
+    display: flex;
+    justify-content: space-between;
+    line-height: 70px;
+    height: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bet-title:before {
+    display: inline-block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    background: url(../images/ic_member_bettingrecord.svg) no-repeat;
+    background-size: 90%;
+    background-position: 0 40%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.funds-title:before {
+    display: inline-block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    background: url(../images/ic_member_fundsrecord.svg) no-repeat;
+    background-size: 90%;
+    background-position: 0 40%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.safety-title:before {
+    display: inline-block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    background: url(../images/ic_member_safety.svg) no-repeat;
+    background-size: 90%;
+    background-position: 0 40%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.more-title:before {
+    display: inline-block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    background: url(../images/ic_member_more.svg) no-repeat;
+    background-size: 90%;
+    background-position: 0 40%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.setting-title:before {
+    display: inline-block;
+    content: "";
+    width: 44px;
+    height: 44px;
+    /* height: 70px; */
+    background: url(../images/ic_member_setting.svg) no-repeat;
+    background-size: 90%;
+    background-position: 0 40%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.setting-block {
+    background: #ffffff;
+    padding: 0% 4% 0% 4%;
+    margin: 1.5% 3%;
+    border-radius: 8px;
+    border: 1px solid #eeeeee;
+    /* margin-bottom: 1.5%; */
+}
+
+.record-block .totle-next {
+    color: #b5b5b5;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.assets-block .totle-next {
+    color: #26bd0e;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.totle-next:after {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    content: "";
+    width: 16px;
+    height: 70px;
+    background: url(../images/btn_more_nextpage_normal.png) no-repeat;
+    background-size: 80%;
+    background-position: 0 45%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+
+@media (max-width:767px) {
+    .member {
+        font-size: 20px
+    }
+
+    .btn-item {
+        font-size: 14px;
+    }
+
+   
+
+    .edit {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .vip1,
+    .vip2,
+    .vip3,
+    .vip4 {
+        margin-top: 6%;
+        margin-bottom: 3%;
+        font-size: 18px;
+    }
+
+    .infor-centent {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+  
+
+    .person-infor p {
+        font-size: 12px;
+    }
+
+    .setting-block {
+        margin-bottom: 65px;
+    }
+
+    .assets-block ul li a,
+    .setting-block ul li a {
+        line-height: 55px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .record-block .totle-next {
+        margin-top: 1px;
+        font-size: 14px;
+    }
+
+    .totle-title:before {
+        width: 34px;
+        height: 34px;
+        background-position: 0 44%;
+        margin-right: 6px;
+    }
+
+    .friend-title:before {
+        width: 34px;
+        height: 34px;
+        background-position: 0 44%;
+        margin-right: 6px;
+    }
+
+    .vip-title:before {
+        width: 34px;
+        height: 34px;
+        background-position: 0 44%;
+        margin-right: 6px;
+    }
+
+    .setting-title:before {
+        width: 34px;
+        height: 34px;
+        background-position: 0 44%;
+        margin-right: 6px;
+    }
+
+    .message-title:before {
+        width: 34px;
+        height: 34px;
+        background-position: 0 44%;
+        margin-right: 6px;
+    }
+
+    .record-block ul li a {
+        line-height: 50px;
+        height: 55px;
+    }
+
+    .record-block ul li:last-of-type a {
+        height: 65px;
+    }
+
+
+    .assets-block ul li,
+    .record-block ul li,
+    .setting-block ul li {
+        /* font-size: 0.80em; */
+        font-size: 16px;
+    }
+
+    .bet-title p,
+    .funds-title p,
+    .safety-title p,
+    .more-title p {
+        margin-top: -10px;
+        margin-left: 40px;
+        /* margin-bottom: 5px; */
+    }
+
+    .bet-title:before {
+        width: 34px;
+        height: 34px;
+        background-position: 0 44%;
+        margin-right: 6px;
+    }
+
+    .funds-title:before {
+        width: 34px;
+        height: 34px;
+        background-position: 0 44%;
+        margin-right: 6px;
+    }
+
+    .safety-title:before {
+        width: 34px;
+        height: 34px;
+        background-position: 0 44%;
+        margin-right: 6px;
+    }
+
+    .more-title:before {
+        width: 34px;
+        height: 34px;
+        background-position: 0 44%;
+        margin-right: 6px;
+    }
+
+    .edit {
+        top: 18%;
+        font-size: 14px;
+    }
+
+    .edit:after {
+        width: 12px;
+        height: 60px;
+        background-position: 0 45%;
+        margin-left: 10px;
+    }
+
+    .totle-next:after {
+        width: 12px;
+        /* height: 60px; */
+        height: 27px;
+        background-position: 0 46%;
+        margin-left: 10px;
+    }
+
+}
+
+@media (max-width:360px) {
+    .member {
+        font-size: 20px
+    }
+
+    .edit {
+        top: 15%;
+    }
+
+    .edit:after {
+        width: 10px;
+        height: 50px;
+        background-position: 0 48%;
+        margin-left: 6px;
+    }
+
+    .person-infor {
+        bottom: 21%;
+        width: 100%;
+    }
+
+
+
+    .record-block .totle-next {
+        font-size: 13px;
+
+    }
+
+}

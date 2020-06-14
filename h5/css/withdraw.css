@@ -1,0 +1,798 @@
+body::-webkit-scrollbar{
+    display:none;
+}
+
+.bg{
+    background:#fafafa;
+    
+}
+
+/* -----------------------header-------------------------- */
+.account{
+    font-size: 32px;
+}
+.acc-header {
+    position: fixed;
+    width: 100%;
+    height: 72px;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 16px 5% 16px 5%;
+    z-index: 5;
+    display: flex;
+	align-items: center;
+}
+.acc-header .arrow { 
+    flex:1;
+}
+.acc-header .arrow a{
+    display:block;
+    width: 26px;
+    height: 26px;
+    background:url(../images/btn_gamelist_back_normal.png) no-repeat;
+    background-size:60%;
+}
+.acc-header .headline-text{
+    flex:2;
+    text-align: center;
+}
+.acc-header .headline-text span {
+    color: #000001;
+    font-size: 1em;
+    font-weight: 500; 
+    
+}
+.acc-header .headline-rbtn{
+    flex:1;
+    text-align: right;
+}
+.acc-header .headline-rbtn a{
+	display:block;
+    color: #b5b5b5;
+    font-weight: 400;
+    font-size: 0.9em;
+} 
+
+/* -----------------------header-end-------------------------- */
+
+/* -----------------------withdraw-slide-------------------------- */
+.card-slide{
+    padding-top:82px;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 280px;
+    --swiper-pagination-color: #909090;/* 两种都可以 */
+} 
+
+
+
+.card{
+    width: 96%;
+    height: 240px;
+    border-radius: 8px;
+    padding:6% 6%;
+    color:#ffffff;
+    margin:0 auto;
+    transition: 300ms;
+    transform: scale(1,0.9);
+}
+
+.orange{
+    background:url(../images/bg_withdaw_orange.png) no-repeat;
+    background-size:cover;
+}
+
+.green{
+    background:url(../images/bg_withdaw_green.png) no-repeat;
+    background-size:cover;
+}
+
+.pink{
+    background:url(../images/bg_withdaw_pink.png) no-repeat;
+    background-size:cover;
+}
+
+.card-title{
+    font-size:18px;
+    opacity: 0.86;
+}
+
+.reload{
+    display:inline-block;
+    width: 20px;
+    height: 18px;
+    background:url(../images/btn_withdraw_reload.png) no-repeat;
+    background-size:100%;
+    vertical-align: top;
+    margin-left:6px;
+}
+
+.money{
+    margin:3% 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid rgba(255, 255, 255, 0.2);
+    padding:3% 1%;
+}
+
+.money span{
+    font-size:28px;
+    text-shadow: 0 0 10px rgba(223, 118, 72, 0.4);
+}
+
+.green .money span{
+    text-shadow: 0 3px 12px rgba(23, 152, 132, 0.4);
+}
+
+.pink .money span{
+    text-shadow: 0 3px 12px rgba(254, 113, 149, 0.4);
+}
+
+.recycling{
+    display:inline-block;
+    color:#ea8254;
+    background:rgba(255, 255, 255, 0.7);
+    border-radius: 60px;
+    padding:2% 4%;
+    font-size:18px;
+}
+
+.btn-green{
+    color:#3dc3ab;
+}
+
+.btn-pink{
+    color:#f86c8e;
+}
+
+.bank-infor{
+    display:flex;
+    justify-content: space-between;
+    font-size:17px;
+    padding-top:3%;
+}
+
+#swiper-slide .swiper-pagination-bullet{
+    width: 6px;
+    height: 6px;
+}
+
+
+.swiper-slide-active>.orange{
+    box-shadow: 0 3px 12px rgba(246, 157, 110, 0.8);
+    transform: scale(1);
+}
+.swiper-slide-active>.green{
+    box-shadow: 0 3px 12px rgba(108, 215, 166, 0.8);
+    transform: scale(1);
+}
+.swiper-slide-active>.pink{
+    box-shadow: 0 3px 12px rgba(254, 113, 149, 0.8);
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+/* -----------------------withdraw-slide-end-------------------------- */
+
+.depo-content{
+    padding:0px 4% 10% 4%;   
+}
+.depo-title{
+    font-size:20px;
+    font-weight: 500;
+    line-height: 60px;
+    color:#535353;
+}
+
+
+select::-ms-expand{ 
+    display: none; 
+}
+select{
+    appearance:none;  
+   -moz-appearance:none;  
+   -webkit-appearance:none;
+    background: url("../images/btn_deposit_dropdown.png") no-repeat  #ffffff;
+    background-position:97%;
+    background-size:4%;
+}
+
+
+select,
+input{
+    font-family: 'Noto Sans TC',"Microsoft JhengHei","微軟正黑體","Heiti TC",'Roboto',Arial, Helvetica, sans-serif;
+}
+
+button,
+input{
+    appearance:none;  
+   -moz-appearance:none;  
+   -webkit-appearance:none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #b6b9ba;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #b6b9ba;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19 */
+    color: #b6b9ba;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10 */
+    color: #b6b9ba;
+    }
+    
+    
+
+.submit-input select{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size:16px;
+    padding-left:20px;
+    color:#b6b9ba;
+    border:1px solid #eeeeee;
+    margin-bottom:4%;
+}
+
+.submit-input select:focus{
+    outline:none;
+    border:1px solid #52c94b;
+    box-shadow: 0 0 0 4px #52c94b21 inset;
+}
+
+.amount-input{
+    position: relative;
+}
+
+.submit-input input{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    font-size:16px;
+    padding-left:20px;
+    color:#343434;
+    background-color:#ffffff;
+    border:1px solid #eeeeee;
+    margin-bottom:4%;
+}
+
+.submit-input input:focus{
+    box-shadow: 0 0 0 4px #52c94b21 inset;
+    border:1px solid #52c94b;
+}
+
+
+.btn-cancel{
+    position: absolute;
+    top:20%;
+    right:3%;
+    display:none;
+    width: 20px;
+    height: 20px;
+    background:url(../images/btn_input_cancel.png) no-repeat;
+    background-size:100%;
+}
+
+.submit-input input:valid + .btn-cancel {
+     display: inline; 
+    }
+
+.submit-input select::after{
+    position: absolute;
+    top:0;
+    right:0;
+    content:'';
+    display:block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/btn_deposit_dropdown.png") no-repeat  #ffffff;
+}
+
+.forget{
+    font-size:14px;
+    text-align: right;
+    color:#a0a0a0;
+}
+
+.forget a{
+    color:#a0a0a0;
+    margin-right:4px;
+}
+
+
+
+.send-out{
+    display:block;
+    color:#ffffff;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(140, 235, 141, 1)15%, rgba(83, 212, 207, 1)85%);
+    line-height: 56px;
+    border-radius: 50px;
+    margin-top:10%;
+    font-size:20px;
+}
+
+.addbank{
+    margin-top:4%;
+}
+
+.clear-both{
+    clear:both;
+}
+
+/* -----------------------------pop-window----------------------------- */
+
+.mask{
+    display:none;
+    position:fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.7);
+    z-index:10;
+}
+
+.popwindow{
+    position: relative;
+    width: 80%;
+    background:rgba(255, 255, 255, 0.96);
+    margin:56% auto 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    padding:17% 5% 8% 5%;
+}
+
+.popwindow img{
+    position: absolute;
+    top:-100px;
+    left:50%;
+    transform: translate(-54%,0);
+    width: 60%;
+}
+
+.popwindow h1{
+    font-size:24px;
+    color:#313030;
+    /* margin-bottom:16px; */
+    font-weight: 500;
+}
+
+.submit-amount{
+    font-size:20px;
+    color:#ff6c8f;
+    margin:5% 0 6% 0;
+}
+
+.popwindow p{
+    font-size:20px;
+    color:#939393;
+    line-height: 26px;
+}
+
+.popwindow span{
+    color:#ff6c8f;
+}
+
+.pop-close{
+    position: absolute;
+    top:14px;
+    right:16px;
+    width: 20px;
+    height: 20px;
+    background:url(../images/btn_more_close_normal.png) no-repeat;
+    background-size:100%;
+}
+
+.confirm{
+    margin-top:10%;
+    display:flex;
+}
+.confirm a{
+    width: 48%;
+    display:block;
+    text-align: center;
+    line-height: 34px;
+    margin:0 2%;
+}
+
+.no{
+    color:#52c94b;
+    border:1px solid #52c94b;
+    border-radius: 60px;
+}
+
+.yes{
+    color:#ffffff;
+    background: linear-gradient(90deg, rgba(140, 235, 141, 1)15%, rgba(83, 212, 207, 1)85%);
+    border-radius: 60px;
+}
+
+.mask-2{
+    display:none;
+    position:fixed;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.7);
+    z-index:10;
+}
+
+.pop-confirm{
+    display:block;
+    color:#ffffff;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(140, 235, 141, 1)15%, rgba(83, 212, 207, 1)85%);
+    line-height: 40px;
+    border-radius: 50px;
+    margin-top:10%;
+    font-size:18px;
+}
+
+
+
+/* -----------------------------pop-window-end---------------------------- */
+
+.prompt-msg{
+	display: none;
+	position: fixed;
+	width:100%;
+	margin: 0 auto;
+	height: 72px;
+	line-height: 72px;
+	background: linear-gradient(90deg, rgba(82, 201, 75, 0.98)15%, rgba(59, 175, 52, 0.98)85%);
+	font-size:20px;
+	font-weight: 400;
+	color:#fff;
+	letter-spacing: 1px;
+    text-align:center;
+    z-index:20;
+}
+
+/* -----------------------------notice-word----------------------------- */
+
+.notice{
+    margin:5% 0;
+    padding:5% 3.5%;
+    background:#ffffff;
+    border-radius: 6px;
+}
+
+.notice h5{
+    text-align: center;
+    color:#ff6c8f;
+    font-size:16px;
+    margin-bottom:5%;
+}
+
+.notice h5:before{
+    content:'';
+    display:inline-block;
+    width: 22px;
+    height: 22px;
+    background:url(../images/ic_deposit_notice.png) no-repeat;
+    background-size:100%;
+    vertical-align: sub;
+    margin-right:10px;
+}
+
+.notice ol{
+    list-style:decimal;
+    padding-left:5%;
+    font-size:14px;
+    color:#b6b9ba;
+}
+.notice ol span{
+    color:#ff6c8f;
+}
+
+.notice ol a{
+    color:#68b6ff;
+}
+
+
+.notice ol li{
+    margin-bottom:3%;
+    line-height: 20px;
+    padding-left:3px;
+}
+
+.notice ol li:last-child{
+    margin-bottom:0;
+}
+
+/* -----------------------------notice-word-end----------------------------- */
+
+
+
+
+.eyes{
+    position: absolute;
+    top:0;
+    right:3%;
+    width: 5%;
+    height: 50px;
+	background:url(../images/btn_eye.png) no-repeat;
+	background-size:100%;
+    background-position:center;
+}
+.eyes.active{
+	position: absolute;
+    top:0;
+    right:3%;
+    width: 5%;
+    height: 50px;
+	background:url(../images/btn_addcard_closeeye.png) no-repeat;
+	background-size:100%;
+	background-position:center;
+}
+
+/* -----------------------------addcard-end----------------------------- */
+
+
+
+
+
+@media (max-width:767px){
+    /* -----------------------header-------------------------- */
+    .account{
+        font-size: 20px
+    }
+    .acc-header{
+        height: 56px;
+        padding: 16px 5% 16px 5%;
+    }
+
+    .acc-header .arrow a{
+        width: 18px;
+        height: 18px;
+    }
+    /* -----------------------header-end-------------------------- */
+    .prompt-msg{
+        height: 56px;
+        line-height: 56px;
+    }
+    .depo-content{
+        padding:0 4% 10% 4%;   
+    }
+    .depo-title{
+        font-size:18px;
+        line-height: 48px;
+    }
+    select{
+        background-size:5%;
+    }
+    .btn-cancel{
+        top:24%;
+    }
+    .send-out{
+        line-height: 48px;
+    }
+
+    .eyes{
+        width: 7%;
+    }
+    .eyes.active{
+        width: 7%;
+    }
+
+
+    /* -----------------------popwindow-------------------------- */
+    .popwindow img{
+        top:-68px;
+        width: 70%;
+    }
+    .popwindow h1{
+        font-size:19px;
+    }
+
+    .submit-amount{
+        font-size:16px;
+    }
+    
+    .popwindow p{
+        font-size:15px;
+        line-height: 19px;
+    }
+    .pop-close{
+        width: 15px;
+        height: 15px;
+    }
+
+    .card-slide{
+        padding-top:70px;
+    }
+
+    .swiper-container {
+        height: 196px;
+    } 
+    
+    .card{
+        height: 160px;
+    }
+
+
+
+    
+}
+
+@media (max-width:375px){
+    .use-password{
+        font-size:15px;
+    }
+    .use-password span{
+        font-size:14px;
+    }
+    .money{
+        margin:4% 0;
+    }
+    .bank-infor{
+        padding-top:4%;
+    }
+
+    .popwindow{
+        padding:16% 5% 8% 5%;
+    }
+
+
+}
+
+
+
+
+@media (max-width:360px){
+	.acc-header{
+		height: 44px;
+		padding: 10px 5% 10px 5%;
+    }
+
+    .prompt-msg{
+        height: 44px;
+        line-height: 44px;
+    }
+    .depo-content{
+        padding:0 4% 10% 4%;   
+    }
+
+    /* -----------------------popwindow-------------------------- */
+    
+    .popwindow h1{
+        font-size:18px;
+        margin-bottom:10px;
+    }
+    
+    .popwindow p{
+        font-size:15px;
+        line-height: 20px;
+    }
+
+    
+
+    .use-password{
+        font-size:14px;
+    }
+    .use-password span{
+        font-size:13px;
+    }
+    .use-password input[type=radio]{
+        width: 18px;
+        height: 18px;
+    }
+    
+    .use-password input[type=radio]:checked{
+        box-shadow: 0 0 0 3.5px #fafafa inset;
+    }
+
+    .card-slide{
+        padding-top:60px;
+    }
+    
+}
+  
+@media (max-width:320px){
+    
+    .submit-input input{
+        height: 44px;
+        font-size:15px;
+    }
+    .submit-input select{
+        height: 44px;
+        font-size:15px;
+    }
+    .bank-text{
+        font-size:16px;
+    }
+    .amount ul li a{
+        line-height: 40px;
+    }
+    .amount-atm ul li a{
+        line-height: 40px;
+    }
+
+
+    .use-password{
+        font-size:13px;
+    }
+    .use-password span{
+        font-size:12px;
+    }
+    .use-password input[type=radio]{
+        width: 16px;
+        height: 16px;
+    }
+        .use-password input[type=radio]:checked{
+        box-shadow: 0 0 0 3px #fafafa inset;
+    }
+
+    .eyes,
+    .eyes.active{
+        width: 8%;
+        height: 44px;
+    }
+
+    .btn-cancel{
+        width: 18px;
+        height: 18px;
+        top:22%;
+    }
+
+
+    .popwindow img{
+        top:-60px;
+    }
+
+
+
+
+
+
+
+
+
+    .swiper-container {
+        width: 100%;
+        height: 174px;
+        --swiper-pagination-color: #909090;/* 两种都可以 */
+    } 
+    
+    
+    
+    .card{
+        width: 90%;
+        height: 140px;
+        border-radius: 8px;
+        padding:5% 6%;
+        color:#ffffff;
+        margin:0 auto;
+    }
+
+
+    .card-title,
+    .recycling{
+        font-size:16px;
+    }
+
+    .money span{
+        font-size:24px;
+    }
+
+    .bank-infor{
+        font-size:15px;
+    }
+
+
+    
+   
+}
